@@ -1,38 +1,24 @@
 ---
 title: Hello World
+date: '2023-06-29 22:00:00'
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+临时性的，VuePress -> Hexo。
 
-### Create a new post
+<!--more-->
 
-``` bash
-$ hexo new "My New Post"
-```
+## 怎么又变回 Hexo 了？
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+VuePress + vuepress-reco 本来是我拿来过渡的替代品，奈何 VitePress + Vuetify 的项目一直在耽搁，我和协助开发的一位好友都没空，并且也不是很急。所以，暂时迁回来 Hexo 作最后过渡（？），之后可能就是完全迁移到 VitePress + Vuetify。
 
-### Run server
+## 文章恢复
 
-``` bash
-$ hexo server
-```
+迁回 Hexo 过渡期间，我会翻新一下之前的一些旧文章，让它更利于被理解。
 
-More info: [Server](https://hexo.io/docs/server.html)
+恢复不是一次性恢复完，要挺长时间重写的，见谅。
 
-### Generate static files
+## VitePress + Vuetify 计划？
 
-``` bash
-$ hexo generate
-```
+打算先开发 docs 版本，用于 Sliver Library，将原本的 SliverRiver Library 的几个部分深度融合在一个 VitePress 里。
 
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+然后再计划开发 blog 版本，用于 Sliver Notebook，可能会参照现有的一些项目进行开发。
