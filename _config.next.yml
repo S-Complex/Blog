@@ -97,7 +97,7 @@ open_graph:
 # External url should start with http:// or https://
 menu:
   Index: ./ || fas fa-home
-  Friends: https://library.restent.win/links || fas fa-users
+  Friends: https://links.restent.win || fas fa-users
   Home: https://www.restent.win || fas fa-home
   #about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
