@@ -1,6 +1,8 @@
 ---
 title: Bitwarden 个人使用心得
-date: 2021-07-08 10:58:55
+date: 2021-07-08
+isOriginal: true
+category: 简评价
 ---
 
 如果你需要一个免费的密码管理器，那我觉得 Bitwarden 应该适合你。

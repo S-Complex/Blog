@@ -1,6 +1,8 @@
 ---
 title: KernelSU 个人使用体验
-date: 2023-07-27 23:29:18
+date: 2023-07-27
+isOriginal: true
+category: 简评价
 ---
 
 偶然从 Magisk 升级到了 KernelSU。

@@ -1,29 +1,19 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
+  "name": "restent-s-notebook",
+  "version": "2.0.0",
+  "description": "Blog of Restent",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "build": "hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "blog:build": "vuepress build src",
+    "blog:clean-dev": "vuepress dev src --clean-cache",
+    "blog:dev": "vuepress dev src",
+    "blog:update-package": "pnpm dlx vp-update"
   },
-  "hexo": {
-    "version": "6.3.0"
-  },
-  "dependencies": {
-    "@waline/hexo-next": "^3.0.1",
-    "hexo": "^6.3.0",
-    "hexo-generator-archive": "^2.0.0",
-    "hexo-generator-category": "^2.0.0",
-    "hexo-generator-index": "^3.0.0",
-    "hexo-generator-searchdb": "^1.4.1",
-    "hexo-generator-tag": "^2.0.0",
-    "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^6.0.0",
-    "hexo-renderer-stylus": "^2.1.0",
-    "hexo-server": "^3.0.0",
-    "hexo-theme-landscape": "^1.0.0",
-    "hexo-theme-next": "^8.17.0"
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.66",
+    "vue": "^3.2.47",
+    "vuepress": "2.0.0-beta.66",
+    "vuepress-theme-hope": "2.0.0-beta.234"
   }
 }

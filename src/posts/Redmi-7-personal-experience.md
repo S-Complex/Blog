@@ -1,6 +1,8 @@
 ---
 title: 不正确却又正确的选择 | Redmi 7 个人使用体验
-date: 2023-08-03 23:14:15
+date: 2023-08-03
+isOriginal: true
+category: 简评价
 ---
 
 Redmi 6 Pro 彻底战损，备用机更换为 Redmi 7。

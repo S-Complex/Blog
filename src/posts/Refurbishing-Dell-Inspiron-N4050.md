@@ -1,6 +1,8 @@
 ---
 title: 整修一台戴尔 Inspiron N4050
-date: 2020-07-24 21:56:26
+date: 2020-07-24
+isOriginal: true
+categoty: 手工活
 ---
 
 整整电脑，增强自己的美丽动手能力（？
