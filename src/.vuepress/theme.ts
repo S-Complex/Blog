@@ -63,6 +63,8 @@ export default hopeTheme({
       rss: true,
     },
 
+    sitemap: false,
+
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
