@@ -2,10 +2,9 @@
     <ContentDoc v-slot="{ doc }">
         <v-card>
             <v-card-title>
-                <div class="text-h4 mb-1">{{ doc.title }}</div>
-                <p class="text-body-1"><v-icon icon="mdi:mdi-clock-time-four" />&nbsp;{{ formatDate(doc.date) }}</p>
-                <br>
+                {{ doc.title }}
             </v-card-title>
+            <v-card-subtitle><v-icon icon="mdi:mdi-clock-time-four" />&nbsp;{{ formatDate(doc.date) }}</v-card-subtitle>
             <v-card-text>
                 <ContentRenderer class="markdown" :value="doc" />
             </v-card-text>
@@ -40,5 +39,10 @@ const path = 'https://blog.restent.win' + (postPath.value as string);
 <style>
 .markdown > ul,li {
     margin: .8rem 1.3rem;
+}
+
+v-card-title {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 </style>
