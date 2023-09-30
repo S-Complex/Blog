@@ -2,5 +2,6 @@ name = "blog"
 main = "./.output/server/index.mjs"
 account_id = ""
 route = ""
+compatibility_date = "2023-09-30"
 [site]
 bucket = ".output/public"
