@@ -1,0 +1,6 @@
+name = "blog"
+main = "./.output/server/index.mjs"
+account_id = ""
+route = ""
+[site]
+bucket = ".output/public"
