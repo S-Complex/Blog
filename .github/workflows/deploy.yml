@@ -1,48 +1,20 @@
-name: Deploy
+name: Deploy to Vercel
 on:
   push:
     branches:
       - main
+
 jobs:
-  ci:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [ 18 ]
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: amondnet/vercel-action@v20
         with:
-          node-version: ${{ matrix.node }}
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
-      - name: Cache node_modules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/pnpm.lock')) }}
-      - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: pnpm install
-      - name: Build
-        run: | 
-          export NODE_OPTIONS="--max-old-space-size=4096"
-          pnpm build
-        env:
-          NITRO_PRESET: cloudflare
-      - name: Publish to Cloudflare Workers
-        uses: cloudflare/wrangler-action@2.0.0
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: '--prod' #Optional
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_STATIC }}
       - name: Send notification to Telegram Group
         uses: appleboy/telegram-action@master
         with:

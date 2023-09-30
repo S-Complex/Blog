@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   },
   css: ["@/assets/scss/style.scss"],
   build: {
-    transpile: ["vuetify", "pinia"],
+    transpile: ["vuetify"],
   },
   srcDir: "src/",
   modules: ["@nuxt/content"],
