@@ -1,7 +1,7 @@
 <template>
     <ContentDoc v-slot="{ doc }">
         <v-card>
-            <v-card-title>
+            <v-card-title class="text-h5">
                 {{ doc.title }}
             </v-card-title>
             <v-card-subtitle><v-icon icon="mdi:mdi-clock-time-four" />&nbsp;{{ formatDate(doc.date) }}</v-card-subtitle>
