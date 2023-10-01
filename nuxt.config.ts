@@ -29,7 +29,14 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content"],
   content: {
     highlight: {
-      theme: 'github-dark'
-    }
-  }
+      theme: "github-dark",
+    },
+  },
+  nitro: {
+    storage: {
+      data: {
+        driver: "vercelKV",
+      },
+    },
+  },
 });
