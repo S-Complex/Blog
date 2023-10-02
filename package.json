@@ -17,7 +17,7 @@
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.12",
     "@mdi/font": "^7.2.96",
-    "@nuxt/content": "2.8.0",
+    "@nuxt/content": "2.8.5",
     "@nuxtjs/critters": "^0.5.1",
     "sass": "^1.68.0",
     "vuetify": "^3.3.19"
