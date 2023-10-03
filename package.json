@@ -15,7 +15,7 @@
     "nuxt": "^3.7.4"
   },
   "dependencies": {
-    "@fontsource/jetbrains-mono": "^5.0.12",
+    "@fontsource/jetbrains-mono": "^5.0.14",
     "@mdi/font": "^7.2.96",
     "@nuxt/content": "2.8.0",
     "@nuxtjs/critters": "^0.5.1",
