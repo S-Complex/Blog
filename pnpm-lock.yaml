@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@fontsource/jetbrains-mono':
-    specifier: ^5.0.12
-    version: 5.0.12
+    specifier: ^5.0.15
+    version: 5.0.15
   '@mdi/font':
     specifier: ^7.2.96
     version: 7.2.96
@@ -716,8 +716,8 @@ packages:
     dev: true
     optional: true
 
-  /@fontsource/jetbrains-mono@5.0.12:
-    resolution: {integrity: sha512-BO2in8zNXWUn1TJsPWgL2qSMYU2SQKoKOmJ9FRrE9gMFtPhEDKgxc0hUCVmeDUcMFrafFEn+KqZ5a85z8rwMzA==}
+  /@fontsource/jetbrains-mono@5.0.15:
+    resolution: {integrity: sha512-rxJwcZ/KDC6az2/9yChI/GW53DXyE8LBMybeheozpSgZPFILLYDRw56XtB620cVw4m/gB7ioMzTlMx0+JUcjZw==}
     dev: false
 
   /@ioredis/commands@1.2.0:
