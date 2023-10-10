@@ -19,7 +19,7 @@
     "@mdi/font": "^7.2.96",
     "@nuxt/content": "2.8.0",
     "@nuxtjs/critters": "^0.5.1",
-    "sass": "^1.68.0",
+    "sass": "^1.69.2",
     "vuetify": "^3.3.19"
   }
 }
