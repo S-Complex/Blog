@@ -21,8 +21,8 @@ dependencies:
     specifier: ^1.68.0
     version: 1.68.0
   vuetify:
-    specifier: ^3.3.19
-    version: 3.3.19(vue@3.3.4)
+    specifier: ^3.3.21
+    version: 3.3.21(vue@3.3.4)
 
 devDependencies:
   '@vercel/kv':
@@ -6134,8 +6134,8 @@ packages:
       '@vue/server-renderer': 3.3.4(vue@3.3.4)
       '@vue/shared': 3.3.4
 
-  /vuetify@3.3.19(vue@3.3.4):
-    resolution: {integrity: sha512-6/byccc79pq2LmveSgte/AXqyEXkq3aFMxKMwoizsDzDPH4vz/44wRx0+TxhiDk4+n8WOhMa2VlXq1xsJIi1HA==}
+  /vuetify@3.3.21(vue@3.3.4):
+    resolution: {integrity: sha512-CVC6MDC45H+IY8Nq5QO/lBhbSd/dg+IV46GKd+LIndriLoQXG+tFv31NQY++tOQgrKeZr6w2SUBMBxSZyHErfg==}
     engines: {node: ^12.20 || >=14.13}
     peerDependencies:
       typescript: '>=4.7'
