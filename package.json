@@ -12,7 +12,7 @@
   "devDependencies": {
     "@vercel/kv": "^0.2.3",
     "@waline/client": "^2.15.8",
-    "nuxt": "^3.7.4"
+    "nuxt": "^3.8.0"
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.12",
