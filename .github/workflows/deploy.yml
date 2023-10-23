@@ -1,14 +1,14 @@
-name: Vercel Production Deployment
+name: Deploy to Vercel
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_PROJECT_ID_STATIC: ${{ secrets.VERCEL_PROJECT_ID_STATIC }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_STATIC }}
   VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 on:
   push:
     branches:
       - main
 jobs:
-  Deploy-Production:
+  Deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
