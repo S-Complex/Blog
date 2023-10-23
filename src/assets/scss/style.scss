@@ -1,0 +1,54 @@
+@use "vuetify/lib/styles/main.sass";
+@use "@mdi/font/css/materialdesignicons.min.css";
+@use "@fontsource/jetbrains-mono";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1e90ff;
+}
+
+p {
+  line-height: 2rem;
+}
+
+hr {
+  margin: 20px 0px;
+}
+
+pre {
+  margin: 1em 1em;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  background-color: #363636;
+  overflow: auto;
+}
+
+code {
+  font-family: "Jetbrains Mono";
+}
+
+.markdown {
+  font-size: 1rem;
+}
+
+blockquote {
+  margin: 1em 2em;
+  padding: 0.5em 1em;
+  border-left: 5px solid #616161;
+  background-color: #757575;
+  color: #ffffff;
+}
+blockquote p {
+  margin: 0;
+}
