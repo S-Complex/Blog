@@ -8,7 +8,7 @@ description: 用 Bulma CSS 写一个速度能接受的友链列表。
 
 <!--more-->
 
-先贴上我的代码样式，成品可以前往 [Friends](/friends) 查看。
+先贴上我的代码样式，成品可以前往 [Friends](https://library.restent.win/links) 查看。
 
 ``` html
 <div class="box">
