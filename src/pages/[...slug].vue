@@ -7,22 +7,23 @@
         </v-card>
         <v-container style="max-width:900px">
             <v-card>
-                <v-card-title class="text-body-1"><v-icon icon="mdi:mdi-clock-time-four" />&nbsp;{{ formatDate(doc.date) }}</v-card-title>
+                <v-card-title class="text-body-1"><v-icon icon="mdi:mdi-clock-time-four" />&nbsp;{{ formatDate(doc.date)
+                }}</v-card-title>
                 <v-card-text>
                     <ContentRenderer class="markdown" :value="doc" />
                 </v-card-text>
-                <v-alert rounded="0" type="info" title="版权声明" variant="tonal">本文作者：Restent Ou<br>本文链接：<a class="text-decoration-none"
-                        v-bind:href="path">{{ path
+                <v-alert rounded="0" type="info" title="版权声明" variant="tonal">本文作者：Restent Ou<br>本文链接：<a
+                        class="text-decoration-none" v-bind:href="path">{{ path
                         }}</a><br>除含有特别声明的文章外，站内所有文章均采用 <a class="text-decoration-none"
                         href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>
                     协议进行许可。</v-alert>
             </v-card>
+            <br>
+            <v-lazy>
+                <Comment />
+            </v-lazy>
         </v-container>
     </ContentDoc>
-    <br>
-    <v-lazy>
-        <Comment />
-    </v-lazy>
 </template>
 
 <script setup lang="ts">
@@ -56,11 +57,11 @@ li {
 }
 
 .text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
 }
 </style>

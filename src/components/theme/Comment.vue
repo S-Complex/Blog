@@ -17,7 +17,7 @@ const serverURL = 'https://waline.restent.win';
 const path = computed(() => useRoute().path);
 const lang = 'zh-CN';
 const emoji = 'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.1/bilibili';
-const dark = 'div[v-theme--dark]';
+const dark = 'auto';
 const login = 'force';
 const wordLimit = '100';
 const imageUploader = false;

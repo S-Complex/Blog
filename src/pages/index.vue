@@ -52,4 +52,13 @@ function formatDate(date?: string): string {
 .pagination>nav {
     margin-top: 20px;
 }
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
 </style>
