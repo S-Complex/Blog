@@ -1,9 +1,7 @@
 <template>
     <div class="container">
         <div class="content markdown">
-            <v-container style="max-width:900px;">
-                <NuxtPage />
-            </v-container>
+            <NuxtPage />
         </div>
     </div>
 </template>

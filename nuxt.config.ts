@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content'],
   content: {
     highlight: {
-      theme: "github-dark",
+      theme: "material-theme-ocean",
     },
   },
   srcDir: './src'

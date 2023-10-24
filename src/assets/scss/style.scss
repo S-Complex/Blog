@@ -45,9 +45,8 @@ code {
 blockquote {
   margin: 1em 2em;
   padding: 0.5em 1em;
-  border-left: 5px solid #616161;
-  background-color: #757575;
-  color: #ffffff;
+  border-left: 5px solid rgba(var(--v-theme-blockquoteBorder));
+  background-color: rgba(var(--v-theme-blockquote));
 }
 blockquote p {
   margin: 0;

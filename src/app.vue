@@ -2,7 +2,6 @@
   <v-app>
     <themeHeader />
     <v-main>
-      <themeBanner />
       <themeBody />
     </v-main>
     <themeFooter />
