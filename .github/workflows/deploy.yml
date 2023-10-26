@@ -1,19 +1,51 @@
-name: Deploy to Vercel
+name: Deploy
 
 on:
   push:
     branches:
       - main
 jobs:
-  Deploy:
-    runs-on: ubuntu-latest
+  CI:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [18]
     steps:
-      - uses: actions/checkout@v3
-      - name: Publish to Vercel
-        uses: amondnet/vercel-action@v20
+      - uses: actions/setup-node@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-args: '--prod' #Optional
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_STATIC }}
+          node-version: ${{ matrix.node }}
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/pnpm.lock')) }}
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: pnpm install
+      - name: Build
+        run: pnpm generate
+      - name: Publish to Cloudflare Workers Site
+        uses: cloudflare/wrangler-action@2.0.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+      - name: Send notification to Telegram Group
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            Restent's Notebook 的一个新更改已应用。
+            Commited by ${{ github.actor }} with message: ${{ github.event.commits[0].message }}
+            您现在可以访问 https://blog.restent.win 以查看最新更改是否生效。

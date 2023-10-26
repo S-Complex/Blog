@@ -16,7 +16,11 @@
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.6",
     "vue-router": "^4.2.5",
-    "vuetify": "^3.3.22"
+    "vuetify": "^3.3.22",
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "typescript": "^5.0.4",
+    "wrangler": "^3.0.0",
+    "@cloudflare/kv-asset-handler": "latest"
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.17",
