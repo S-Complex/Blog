@@ -16,8 +16,8 @@ export default defineNuxtPlugin((nuxtApp) => {
             surface: "#FFFFFF",
             primary: "#1e90ff",
             secondary: "#87CEFA",
-            blockquote: "#EEEEEE",
-            blockquoteBorder: "#E0E0E0"
+            blockquote: "#ECEFF1",
+            blockquoteBorder: "#039BE5"
           },
         },
         dark: {
@@ -26,8 +26,8 @@ export default defineNuxtPlugin((nuxtApp) => {
             surface: "#212121",
             primary: "#1e90ff",
             secondary: "#87CEFA",
-            blockquote: "#616161",
-            blockquoteBorder: "#424242"
+            blockquote: "#455A64",
+            blockquoteBorder: "#0277BD"
           },
         },
       },

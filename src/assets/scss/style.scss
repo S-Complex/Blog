@@ -18,10 +18,6 @@ a {
   color: #1e90ff;
 }
 
-p {
-  line-height: 2rem;
-}
-
 hr {
   margin: 20px 0px;
 }
@@ -40,14 +36,4 @@ code {
 
 .markdown {
   font-size: 1rem;
-}
-
-blockquote {
-  margin: 1em 2em;
-  padding: 0.5em 1em;
-  border-left: 5px solid rgba(var(--v-theme-blockquoteBorder));
-  background-color: rgba(var(--v-theme-blockquote));
-}
-blockquote p {
-  margin: 0;
 }

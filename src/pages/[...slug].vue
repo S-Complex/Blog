@@ -48,7 +48,8 @@ const path = 'https://blog.restent.win' + (postPath.value as string);
 }
 
 .markdown>p {
-    line-height: 1.6rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.7rem;
 }
 
 .markdown>ul,
@@ -64,4 +65,17 @@ li {
     text-align: center;
     color: #ffffff;
 }
+
+.markdown > blockquote {
+  margin: 1em;
+  padding: 0.5em 1em;
+  border-left: 3.5px solid rgba(var(--v-theme-blockquoteBorder));
+  background-color: rgba(var(--v-theme-blockquote));
+}
+
+.markdown > blockquote p {
+  line-height: 1.5rem;
+  margin: 0;
+}
+
 </style>
