@@ -13,12 +13,11 @@
                 <v-row>
                     <v-col>
                         <v-card :to="slug">
+                            <v-card-title class="text-h5">{{ title }}</v-card-title>
                             <v-card-text>
-                                <div class="text-h5 mb-1">{{ title }}</div>
-                                <p class="text-body-1 mb-3">{{ description }}</p>
-                                <div class="text-body-2">
-                                    <v-icon icon="mdi:mdi-clock-time-four" />&nbsp;{{ formatDate(date) }}
-                                </div>
+                                <p class="text-body-1">{{ description }}</p>
+                                <hr>
+                                <v-icon icon="mdi-clock-outline" />&nbsp;{{ formatDate(date) }}
                             </v-card-text>
                         </v-card>
                     </v-col>
@@ -60,5 +59,9 @@ function formatDate(date?: string): string {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff;
+}
+
+hr {
+    margin: 8px 0px;
 }
 </style>

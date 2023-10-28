@@ -2,13 +2,17 @@
     <ContentDoc v-slot="{ doc }">
         <v-card class="mx-auto" rounded="0" style="height:400px" color="#BDBDBD">
             <v-img height="100%" cover src="https://library.restent.win/images/bg.webp">
-                <div class="text-h4 theme-text-white text">{{ doc.title }}</div>
+                <div class="theme-text-white text">
+                    <p class="text-h4 mb-2">{{ doc.title }}</p>
+                    <div class="text-body-1"><v-icon icon="mdi-clock-outline" />&nbsp;{{
+                        formatDate(doc.date)
+                    }}</div>
+                </div>
             </v-img>
         </v-card>
         <v-container style="max-width:900px">
-            <v-card>
-                <v-card-title class="text-body-1"><v-icon icon="mdi:mdi-clock-time-four" />&nbsp;{{ formatDate(doc.date)
-                }}</v-card-title>
+            <v-card class="mt-n16">
+                <v-card-title class="text-body-1"></v-card-title>
                 <v-card-text>
                     <ContentRenderer class="markdown" :value="doc" />
                 </v-card-text>
@@ -66,16 +70,19 @@ li {
     color: #ffffff;
 }
 
-.markdown > blockquote {
-  margin: 1em;
-  padding: 0.5em 1em;
-  border-left: 3.5px solid rgba(var(--v-theme-blockquoteBorder));
-  background-color: rgba(var(--v-theme-blockquote));
+.markdown>blockquote {
+    margin: 1em;
+    padding: 0.5em 1em;
+    border-left: 3.5px solid rgba(var(--v-theme-blockquoteBorder));
+    background-color: rgba(var(--v-theme-blockquote));
 }
 
-.markdown > blockquote p {
-  line-height: 1.5rem;
-  margin: 0;
+.markdown>blockquote p {
+    line-height: 1.5rem;
+    margin: 0;
 }
 
+.markdown > hr {
+  margin: 20px 0px;
+}
 </style>
