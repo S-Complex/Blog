@@ -17,7 +17,7 @@
     "nuxt": "^3.8.0",
     "typescript": "^5.0.4",
     "vite-plugin-vuetify": "^1.0.2",
-    "vue": "^3.3.6",
+    "vue": "^3.3.7",
     "vue-router": "^4.2.5",
     "vuetify": "^3.3.22",
     "wrangler": "^3.0.0"
