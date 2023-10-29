@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="content markdown">
+        <div class="content">
             <NuxtPage />
         </div>
     </div>

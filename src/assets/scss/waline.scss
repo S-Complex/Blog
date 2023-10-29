@@ -1,0 +1,6 @@
+@use "@waline/client/dist/waline.css";
+
+:root {
+  --waline-theme-color: rgba(var(--v-theme-primary));
+  --waline-active-color: rgba(var(--v-theme-secondary));
+}

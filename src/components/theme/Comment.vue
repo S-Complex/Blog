@@ -11,7 +11,7 @@ import { Waline } from '@waline/client/component';
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
-import '@waline/client/dist/waline.css';
+import '../../assets/scss/waline.scss';
 
 const serverURL = 'https://waline.restent.win';
 const path = computed(() => useRoute().path);

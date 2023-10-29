@@ -31,6 +31,8 @@
 </template>
 
 <script setup lang="ts">
+import '../assets/scss/markdown.scss'
+
 const Comment = defineAsyncComponent(() => import('@/components/theme/Comment.vue'))
 const blogPosts = await queryContent('/posts')
     .sort({ date: -1 })
@@ -45,44 +47,3 @@ const formatDate = (date: string | number | Date) => {
 const postPath = computed(() => useRoute().path);
 const path = 'https://blog.restent.win' + (postPath.value as string);
 </script>
-
-<style>
-.markdown {
-    font-size: 1rem;
-}
-
-.markdown>p {
-    line-height: 1.5rem;
-    margin-bottom: 0.7rem;
-}
-
-.markdown>ul,
-li {
-    margin: .8rem 1.3rem;
-}
-
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff;
-}
-
-.markdown>blockquote {
-    margin: 1em;
-    padding: 0.5em 1em;
-    border-left: 3.5px solid rgba(var(--v-theme-blockquoteBorder));
-    background-color: rgba(var(--v-theme-blockquote));
-}
-
-.markdown>blockquote p {
-    line-height: 1.5rem;
-    margin: 0;
-}
-
-.markdown > hr {
-  margin: 20px 0px;
-}
-</style>

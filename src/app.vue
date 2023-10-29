@@ -48,7 +48,7 @@ useSeoMeta({
   ogTitle: 'Restent\'s Notebook',
   description: 'Blog of Restent Ou which belongs to Sliver Complex.',
   ogDescription: 'Blog of Restent Ou which belongs to Sliver Complex.',
-  ogImage: 'https://library.restent.win/images/profile.webp',
+  ogImage: 'https://library.restent.win/images/icons/avatar.webp',
 })
 
 import { useTheme } from 'vuetify'
