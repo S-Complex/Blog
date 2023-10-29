@@ -1,6 +1,10 @@
 @use "vuetify/lib/styles/main.sass";
 @use "@mdi/font/css/materialdesignicons.min.css";
-@use "@fontsource/jetbrains-mono";
+@use "@fontsource/roboto";
+
+html {
+  font-family: "Roboto";
+}
 
 h1,
 h2,
@@ -16,8 +20,4 @@ h6 {
 a {
   text-decoration: none;
   color: rgba(var(--v-theme-primary));
-}
-
-.markdown {
-  font-size: 1rem;
 }

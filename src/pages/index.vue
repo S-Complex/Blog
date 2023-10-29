@@ -48,10 +48,6 @@ function formatDate(date?: string): string {
 </script>
   
 <style>
-.pagination>nav {
-    margin-top: 20px;
-}
-
 .text {
     position: absolute;
     top: 50%;

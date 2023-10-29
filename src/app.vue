@@ -40,6 +40,16 @@ useHead({
       rel: "preload",
       href: "https://library.restent.win/images/bg.webp",
       as: "image"
+    },
+    {
+      rel: "preload",
+      href: "https://cdn.staticfile.org/vuetify/3.3.23/vuetify.min.css",
+      as: "style"
+    },
+    {
+      rel: "prefetch",
+      href: "https://cdn.staticfile.org/vuetify/3.3.23/vuetify.min.js",
+      as: "script"
     }
   ]
 })

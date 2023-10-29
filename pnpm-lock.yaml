@@ -8,6 +8,9 @@ dependencies:
   '@fontsource/jetbrains-mono':
     specifier: ^5.0.17
     version: 5.0.17
+  '@fontsource/roboto':
+    specifier: ^5.0.8
+    version: 5.0.8
   '@mdi/font':
     specifier: ^7.3.67
     version: 7.3.67
@@ -1059,6 +1062,10 @@ packages:
 
   /@fontsource/jetbrains-mono@5.0.17:
     resolution: {integrity: sha512-Y/EtdbwKwNQTGpnMrexX8SVW6Jqlh0nX2bNHI9Z9m6FsyjbocZIFNJqwSY9bDUoi7irGtz8nuidAN7FF8wYuJA==}
+    dev: false
+
+  /@fontsource/roboto@5.0.8:
+    resolution: {integrity: sha512-XxPltXs5R31D6UZeLIV1td3wTXU3jzd3f2DLsXI8tytMGBkIsGcc9sIyiupRtA8y73HAhuSCeweOoBqf6DbWCA==}
     dev: false
 
   /@ioredis/commands@1.2.0:

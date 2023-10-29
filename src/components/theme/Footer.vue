@@ -1,5 +1,5 @@
 <template>
-    <v-footer absolute border>
+    <v-footer absolute>
         <v-row no-gutters>
             <v-col class="text-md-left text-center" cols="12" md="6">
                 <p class="pt-2 pb-md-2 ma-md-2 text-body-2">

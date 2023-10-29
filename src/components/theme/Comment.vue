@@ -16,7 +16,7 @@ import '../../assets/scss/waline.scss';
 const serverURL = 'https://waline.restent.win';
 const path = computed(() => useRoute().path);
 const lang = 'zh-CN';
-const emoji = 'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.1/bilibili';
+const emoji = 'https://unpkg.com/@waline/emojis@1.2.0/bmoji';
 const dark = 'div[class="v-application v-theme--dark v-layout v-layout--full-height v-locale--is-ltr"]';
 const login = 'force';
 const wordLimit = '100';
