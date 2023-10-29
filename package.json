@@ -27,6 +27,6 @@
     "@fontsource/roboto": "^5.0.8",
     "@mdi/font": "^7.3.67",
     "@nuxt/content": "^2.8.5",
-    "sass": "^1.69.4"
+    "sass": "^1.69.5"
   }
 }
