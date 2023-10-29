@@ -19,7 +19,7 @@
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.6",
     "vue-router": "^4.2.5",
-    "vuetify": "^3.3.22",
+    "vuetify": "^3.3.23",
     "wrangler": "^3.0.0"
   },
   "dependencies": {
