@@ -43,9 +43,8 @@ useHead({
       as: "image"
     },
     {
-      rel: "preload",
-      href: "https://cdn.staticfile.org/vuetify/3.3.23/vuetify.min.css",
-      as: "style"
+      rel: "stylesheet",
+      href: "https://cdn.staticfile.org/vuetify/3.3.23/vuetify.min.css"
     },
     {
       rel: "prefetch",
