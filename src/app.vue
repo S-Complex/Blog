@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <NuxtLoadingIndicator color="rgba(var(--v-theme-primary))" />
     <themeHeader />
     <v-main>
       <themeBody />
