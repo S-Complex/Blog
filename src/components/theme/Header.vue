@@ -24,7 +24,7 @@
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         </template>
         <v-app-bar-title class="text-h6">Restent's Notebook</v-app-bar-title>
-        <v-btn icon="mdi-brightness-6" @click="toggleTheme"></v-btn>
+        <v-btn icon="mdi-theme-light-dark" @click="toggleTheme"></v-btn>
     </v-app-bar>
 </template>
 
