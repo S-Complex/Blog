@@ -2,6 +2,7 @@
 title: 使用 Bulma CSS 重写友链列表
 date: 2022-07-22
 description: 用 Bulma CSS 写一个速度能接受的友链列表。
+banner: https://library.restent.win/images/postBanners/use-bulma-css-to-write-friends-link.webp
 ---
 
 之前用 NexT 8 主题的时候，因为背景不自带自适应功能，所以在手机以及某些分辨率低的设备下看我的博客，背景就真的一言难尽。在多位朋友的催促，以及 Icarus 终于发布了支持 Hexo 6 的 Release Version 之后，我把我的博客主题改成了 Icarus 5。不过调试的时候发现原来的友链卡片会导致整个页面出 Bug（反正惨不忍睹就是了），[@Nofated](https://blog.nofated.win) 就推荐我用 Bulma CSS 写友链卡片。
