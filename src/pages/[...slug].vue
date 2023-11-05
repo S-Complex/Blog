@@ -1,7 +1,7 @@
 <template>
     <ContentDoc v-slot="{ doc }">
         <Head>
-            <Meta name="og:image" :content="doc.banner ?? 'https://library.restent.win/images/bg.webp'" />
+            <Meta property="og:image" v-bind:content="doc.banner ?? 'https://library.restent.win/images/bg.webp'" />
         </Head>
         <v-card class="mx-auto" rounded="0" style="height:400px" color="#BDBDBD">
             <v-img height="100%" cover v-bind:src="doc.banner ?? 'https://library.restent.win/images/bg.webp'">
