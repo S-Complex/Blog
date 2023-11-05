@@ -1,11 +1,12 @@
 <template>
   <v-app>
-    <NuxtLoadingIndicator color="rgba(var(--v-theme-primary))" />
-    <themeHeader />
-    <v-main>
+    <div>
+      <NuxtLoadingIndicator color="rgba(var(--v-theme-primary))" />
+      <themeHeader />
+      <div style="height:64px;" />
       <themeBody />
-    </v-main>
-    <themeFooter />
+      <themeFooter />
+    </div>
   </v-app>
 </template>
 
