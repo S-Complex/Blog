@@ -1,12 +1,14 @@
 <template>
     <ContentDoc v-slot="{ doc }">
+        <Head>
+            <Meta name="og:image" :content="doc.banner ?? 'https://library.restent.win/images/bg.webp'" />
+        </Head>
         <v-card class="mx-auto" rounded="0" style="height:400px" color="#BDBDBD">
-            <v-img height="100%" cover src="https://library.restent.win/images/bg.webp">
+            <v-img height="100%" cover v-bind:src="doc.banner ?? 'https://library.restent.win/images/bg.webp'">
                 <div class="theme-text-white text">
                     <p class="text-h4 mb-2">{{ doc.title }}</p>
-                    <div class="text-body-1"><v-icon icon="mdi-clock-outline" />&nbsp;{{
-                        formatDate(doc.date)
-                    }}</div>
+                    <v-chip prepend-icon="mdi-calendar-month" variant="text">{{ formatDate(doc.date)
+                            }}</v-chip>
                 </div>
             </v-img>
         </v-card>
@@ -34,10 +36,6 @@
 import '../assets/scss/markdown.scss'
 
 const Comment = defineAsyncComponent(() => import('@/components/theme/Comment.vue'))
-const blogPosts = await queryContent('/posts')
-    .sort({ date: -1 })
-    .where({ _partial: false })
-    .find();
 
 const formatDate = (date: string | number | Date) => {
     const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: '2-digit', day: '2-digit' };

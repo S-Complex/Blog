@@ -3,7 +3,7 @@
     <div>
       <NuxtLoadingIndicator color="rgba(var(--v-theme-primary))" />
       <themeHeader />
-      <div style="height:64px;" />
+      <div style="height:64px" />
       <themeBody />
       <themeFooter />
     </div>

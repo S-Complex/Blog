@@ -8,16 +8,19 @@
         </v-img>
     </v-card>
     <v-container style="max-width:900px;">
-        <div v-for="{ _path: slug, title, date, description } in blogPosts" :key="slug">
+        <div v-for="{ _path: slug, title, date, description, banner } in blogPosts" :key="slug">
             <ContentList path="/posts" v-slot="{ list }">
                 <v-row>
                     <v-col>
                         <v-card :to="slug">
-                            <v-card-title class="text-h5">{{ title }}</v-card-title>
+                            <v-img class="align-end text-white" height="200"
+                                v-bind:src="banner ?? 'https://library.restent.win/images/defaultBanner.webp'" cover>
+                                <v-card-title style="white-space:normal;">{{ title }}</v-card-title>
+                            </v-img>
                             <v-card-text>
-                                <p class="text-body-1">{{ description }}</p>
-                                <hr>
-                                <v-icon icon="mdi-clock-outline" />&nbsp;{{ formatDate(date) }}
+                                <div class="text-body-1 mb-2">{{ description }}</div>
+                                <v-chip prepend-icon="mdi-calendar-month" variant="text">{{ formatDate(date)
+                            }}</v-chip>
                             </v-card-text>
                         </v-card>
                     </v-col>
