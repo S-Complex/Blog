@@ -2,7 +2,7 @@
 title: “真·只要快就行” | 用 Bulma 写一个对国内友好的友链页
 date: 2023-02-27
 description: 将友链拆出来并独立化、卡片样式进行调整、优化友链头像加载速度。
-banner: https://library.restent.win/images/postBanners/use-bulma-css-to-write-friends-link.webp
+banner: https://library.restent.win/images/postBanners/build-a-fast-links-page.webp
 ---
 
 ## 先有的想法
