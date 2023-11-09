@@ -25,7 +25,21 @@
         </template>
         <v-app-bar-title class="text-h6">Restent's Notebook</v-app-bar-title>
         <v-btn icon="mdi-theme-light-dark" @click="toggleTheme"></v-btn>
+        <v-btn icon="mdi-rss" @click="dialog = true"></v-btn>
     </v-app-bar>
+
+    <v-dialog v-model="dialog" width="auto">
+        <v-card title="通过 RSS 订阅本站">
+            <v-card-text>
+                您可以通过下述三种类型的 RSS 订阅本站。
+            </v-card-text>
+            <v-card-actions>
+                <v-btn color="primary" href="/feed.xml" @click="dialog = false">RSS 2</v-btn>
+                <v-btn color="primary" href="/feed.atom" @click="dialog = false">Atom</v-btn>
+                <v-btn color="primary" href="/feed.json" @click="dialog = false">Json</v-btn>
+            </v-card-actions>
+        </v-card>
+    </v-dialog>
 </template>
 
 <script setup lang="ts">
@@ -43,6 +57,7 @@ export default {
     data() {
         return {
             drawer: false,
+            dialog: false,
         }
     },
 }
