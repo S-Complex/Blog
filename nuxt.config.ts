@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import vuetify from 'vite-plugin-vuetify'
+const baseUrl = 'https://blog.restent.win'
+
 export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
@@ -19,6 +21,23 @@ export default defineNuxtConfig({
   },
   sitemap: {
     autoLastmod: false,
+  },
+  feedme: {
+    content: {
+      feed: {
+        defaults: {
+          title: 'Restent \'s Notebook',
+          description: 'Blog of Restent Ou which belongs to Sliver Complex.',
+          copyright: 'Copyright © Restent Ou 2019 - present. Powered by Nuxt.js.',
+          id: baseUrl,
+          link: baseUrl,
+          author: {
+            name: 'Restent Ou',
+            email: 'i@restent.win'
+          }
+        }
+      }
+    }
   },
   content: {
     highlight: {
