@@ -1,75 +1,11 @@
-# Nuxt 3 Minimal Starter
+# Restent's Notebook
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+这里是 Restent's Notebook 的源代码仓库。
 
-## Setup
+Restent's Notebook 基于 Nuxt.js 与 Vuetify，使用 TypeScript 进行开发。
 
-Make sure to install the dependencies:
+## 协议
 
-```bash
-# npm
-npm install
+源代码以 MIT 协议发布。
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+站点内的原创内容默认以 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans) 发布。某些特定文章可能会更换协议，您需要额外注意文章底部的版权声明。
