@@ -42,15 +42,6 @@ useHead({
       rel: "preload",
       href: "https://library.restent.win/images/bg.webp",
       as: "image"
-    },
-    {
-      rel: "stylesheet",
-      href: "https://cdn.staticfile.org/vuetify/3.3.23/vuetify.min.css"
-    },
-    {
-      rel: "prefetch",
-      href: "https://cdn.staticfile.org/vuetify/3.3.23/vuetify.min.js",
-      as: "script"
     }
   ]
 })
