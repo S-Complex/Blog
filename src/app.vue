@@ -51,10 +51,6 @@ useHead({
       rel: "prefetch",
       href: "https://cdn.staticfile.org/vuetify/3.3.23/vuetify.min.js",
       as: "script"
-    },
-    {
-      rel: "stylesheet",
-      href: "https://gcore.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
     }
   ]
 })
