@@ -11,21 +11,21 @@
 
         <v-list density="compact" nav>
             <v-list-subheader>Pages</v-list-subheader>
-            <v-list-item prepend-icon="mdi-home" title="Index" value="Index" nuxt to="/"></v-list-item>
-            <v-list-item prepend-icon="mdi-account-group" title="Friends" value="Friends"
+            <v-list-item prepend-icon="home" title="Index" value="Index" nuxt to="/"></v-list-item>
+            <v-list-item prepend-icon="group" title="Friends" value="Friends"
                 href="https://library.restent.win/links"></v-list-item>
-            <v-list-item prepend-icon="mdi-cellphone-sound" title="Contact" value="Contact"
+            <v-list-item prepend-icon="contacts" title="Contact" value="Contact"
                 href="https://library.restent.win/contact"></v-list-item>
         </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar>
+    <v-app-bar scroll-behavior="hide">
         <template v-slot:prepend>
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon><v-icon @click.stop="drawer = !drawer" icon="menu" /></v-app-bar-nav-icon>
         </template>
         <v-app-bar-title class="text-h6">Restent's Notebook</v-app-bar-title>
-        <v-btn icon="mdi-theme-light-dark" @click="toggleTheme"></v-btn>
-        <v-btn icon="mdi-rss" @click="dialog = true"></v-btn>
+        <v-btn icon @click="dialog = true"><v-icon icon="rss_feed" /></v-btn>
+        <v-btn icon @click="toggleTheme"><v-icon icon="contrast" /></v-btn>
     </v-app-bar>
 
     <v-dialog v-model="dialog" width="auto">
@@ -61,4 +61,5 @@ export default {
         }
     },
 }
+
 </script>

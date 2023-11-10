@@ -7,7 +7,7 @@
             <v-img height="100%" cover v-bind:src="doc.banner ?? 'https://library.restent.win/images/bg.webp'">
                 <div class="theme-text-white text">
                     <p class="text-h4 mb-2">{{ doc.title }}</p>
-                    <v-chip prepend-icon="mdi-calendar-month" variant="text">{{ formatDate(doc.date)
+                    <v-chip prepend-icon="schedule" variant="text">{{ formatDate(doc.date)
                             }}</v-chip>
                 </div>
             </v-img>

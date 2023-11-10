@@ -11,9 +11,6 @@ dependencies:
   '@fontsource/roboto':
     specifier: ^5.0.8
     version: 5.0.8
-  '@mdi/font':
-    specifier: ^7.3.67
-    version: 7.3.67
   '@nuxt/content':
     specifier: ^2.9.0
     version: 2.9.0(nuxt@3.8.1)(vue@3.3.8)
@@ -31,6 +28,9 @@ devDependencies:
   '@waline/client':
     specifier: ^2.15.8
     version: 2.15.8(typescript@5.2.2)
+  material-design-icons-iconfont:
+    specifier: ^6.7.0
+    version: 6.7.0
   nuxt:
     specifier: ^3.8.1
     version: 3.8.1(sass@1.69.5)(typescript@5.2.2)(vite@4.5.0)
@@ -1081,10 +1081,6 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
-
-  /@mdi/font@7.3.67:
-    resolution: {integrity: sha512-SWxvzRbUQRfewlIV+OF4/YF4DkeTjMWoT8Hh9yeU/5UBVdJZj9Uf4a9+cXjknSIhIaMxZ/4N1O/s7ojApOOGjg==}
-    dev: false
 
   /@netlify/functions@2.3.0:
     resolution: {integrity: sha512-E3kzXPWMP/r1rAWhjTaXcaOT47dhEvg/eQUJjRLhD9Zzp0WqkdynHr+bqff4rFNv6tuXrtFZrpbPJFKHH0c0zw==}
@@ -4109,6 +4105,10 @@ packages:
     resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
     engines: {node: '>= 12'}
     hasBin: true
+    dev: true
+
+  /material-design-icons-iconfont@6.7.0:
+    resolution: {integrity: sha512-lSj71DgVv20kO0kGbs42icDzbRot61gEDBLQACzkUuznRQBUYmbxzEkGU6dNBb5fRWHMaScYlAXX96HQ4/cJWA==}
     dev: true
 
   /mdast-util-definitions@5.1.2:

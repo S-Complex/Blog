@@ -34,7 +34,7 @@ export default defineNuxtConfig({
           author: {
             name: 'Restent Ou',
             email: 'i@restent.win'
-          }
+          },
         }
       }
     }

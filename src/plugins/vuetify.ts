@@ -1,10 +1,18 @@
 import 'vuetify/styles'
 import { createVuetify } from "vuetify";
 import "@/assets/scss/style.scss";
+import { aliases, md } from 'vuetify/iconsets/md';
 
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     ssr: true,
+    icons: {
+      defaultSet: 'md',
+      aliases,
+      sets: {
+        md,
+      }
+    },
     theme: {
       themes: {
         light: {

@@ -19,8 +19,8 @@
                             </v-img>
                             <v-card-text>
                                 <div class="text-body-1 mb-2">{{ description }}</div>
-                                <v-chip prepend-icon="mdi-calendar-month" variant="text">{{ formatDate(date)
-                            }}</v-chip>
+                                <v-chip prepend-icon="schedule" variant="text">{{ formatDate(date)
+                                }}</v-chip>
                             </v-card-text>
                         </v-card>
                     </v-col>
