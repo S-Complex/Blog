@@ -21,7 +21,7 @@
 
     <v-app-bar scroll-behavior="hide">
         <template v-slot:prepend>
-            <v-app-bar-nav-icon><v-icon icon="menu" @click.stop="drawer = !drawer" /></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer"><v-icon icon="menu" /></v-app-bar-nav-icon>
         </template>
         <v-app-bar-title class="text-h6">Restent's Notebook</v-app-bar-title>
         <v-btn icon @click="dialog = true"><v-icon icon="rss_feed" /></v-btn>
