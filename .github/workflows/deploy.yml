@@ -36,16 +36,21 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm generate
-      - name: Publish to Cloudflare Workers Site
-        uses: cloudflare/wrangler-action@2.0.0
+      - name: Publish to Vercel
+        uses: amondnet/vercel-action@v20
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: "--prod" #Optional
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_STATIC }}
       - name: Send notification to Telegram Group
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            Restent's Notebook 的一个新更改已应用。
-            Commited by ${{ github.actor }} with message: ${{ github.event.commits[0].message }}
-            您现在可以访问 https://blog.restent.win 以查看最新更改是否生效。
+            一个新更改已经应用到 Restent's Notebook。
+            提交人：${{ github.actor }}
+            提交信息：${{ github.event.commits[0].message }}
+            您现在可以访问 https://blog.restent.win 以查看最新更改是否生效，若未生效请尝试刷新缓存。
