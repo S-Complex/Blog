@@ -14,7 +14,7 @@
     "@waline/client": "^2.15.8",
     "nuxt": "^3.8.1",
     "nuxt-feedme": "^1.0.0",
-    "nuxt-simple-sitemap": "^3.4.1",
+    "nuxt-simple-sitemap": "^4.1.0",
     "typescript": "^5.2.2",
     "vite-plugin-vuetify": "^1.0.2",
     "vue": "^3.3.8",
