@@ -23,7 +23,8 @@
         <template v-slot:prepend>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"><v-icon icon="menu" /></v-app-bar-nav-icon>
         </template>
-        <v-app-bar-title class="text-h6">Restent's Notebook</v-app-bar-title>
+        <v-app-bar-title v-if="path.includes('posts')" class="text-h6"><ContentDoc v-slot="{ doc }">{{ doc.title }}</ContentDoc></v-app-bar-title>
+        <v-app-bar-title v-else class="text-h6">Restent's Notebook</v-app-bar-title>
         <v-btn icon @click="dialog = true"><v-icon icon="rss_feed" /></v-btn>
         <v-btn icon @click="toggleTheme"><v-icon icon="contrast" /></v-btn>
     </v-app-bar>
@@ -50,6 +51,8 @@ const theme = useTheme()
 function toggleTheme() {
     theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
 }
+
+const path = computed(() => useRoute().path);
 </script>
 
 <script lang="ts">

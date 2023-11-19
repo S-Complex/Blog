@@ -5,6 +5,7 @@ import { aliases, md } from 'vuetify/iconsets/md';
 
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
+    ssr: true,
     icons: {
       defaultSet: 'md',
       aliases,

@@ -2,6 +2,7 @@
 title: 国区 Apple Music 使用报告
 date: 2021-07-17
 description: 一次偶然，免费上了一个 dalao 的 Apple Music 家庭车，特此写了篇没啥用的报告。
+tags: Apple Music
 ---
 
 很早之前，由于网易云歌曲一片灰、QQ 音乐多为收费（e.g. Luv Letter），我就直接跑路了，用了一段时间的 Spotify。但是，Spotify Free 我不是很喜欢，不仅插入广告、放别的推荐的歌还切不了，甚至我换了一个地区的飞机就不给我登录了。尽管我 Reactive Account，能成功登录，但是不仅之前收藏的歌全给我清空了，Free 这个逆天状态我也不是很想用。
