@@ -2,7 +2,7 @@
     <Head>
         <Title>Index</Title>
     </Head>
-    <v-card class="mx-auto" rounded="0" style="height:400px" color="#BDBDBD">
+    <v-card class="mx-auto" rounded="0" width="100%" height="400" color="#BDBDBD">
         <v-img height="100%" cover src="https://library.restent.win/images/bg.webp">
             <div class="text-h4 theme-text-white text">静寂に問う 答えを求めて</div>
         </v-img>
@@ -13,7 +13,7 @@
                 <v-row>
                     <v-col>
                         <v-card :to="slug">
-                            <v-img class="align-end text-white" height="200"
+                            <v-img class="align-end text-white" width="100%" height="200"
                                 v-bind:src="banner ?? 'https://library.restent.win/images/defaultBanner.webp'" cover>
                                 <v-card-title style="white-space:normal;">{{ title }}</v-card-title>
                             </v-img>
