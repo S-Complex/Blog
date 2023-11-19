@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-simple-sitemap',
     'nuxt-feedme',
+    'nuxt-simple-robots',
     async (options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', config => config.plugins.push(
         vuetify()
@@ -21,6 +22,7 @@ export default defineNuxtConfig({
   },
   sitemap: {
     autoLastmod: false,
+    xsl: false,
   },
   feedme: {
     content: {
