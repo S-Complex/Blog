@@ -3,7 +3,6 @@ import vuetify from 'vite-plugin-vuetify'
 const baseUrl = 'https://blog.restent.win'
 
 export default defineNuxtConfig({
-  ssr: false,
   build: {
     transpile: ['vuetify'],
   },
