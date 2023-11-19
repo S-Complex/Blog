@@ -11,6 +11,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@cloudflare/kv-asset-handler": "latest",
+    "@cloudflare/workers-types": "^4.20231025.0",
     "@waline/client": "^2.15.8",
     "nuxt": "^3.8.1",
     "nuxt-feedme": "^1.0.0",

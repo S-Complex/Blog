@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy site
 
 on:
   push:
@@ -12,11 +12,12 @@ jobs:
         os: [ubuntu-latest]
         node: [18]
     steps:
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
       - name: Checkout
         uses: actions/checkout@master
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
@@ -31,20 +32,16 @@ jobs:
         with:
           path: node_modules
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/pnpm.lock')) }}
-      - name: Install Dependencies
+      - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: pnpm install
-      - name: Build
+      - name: Build site
         run: pnpm generate
-      - name: Publish to Vercel
-        uses: amondnet/vercel-action@v20
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@2.0.0
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-args: "--prod" #Optional
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID_STATIC }}
-      - name: Send notification to Telegram Group
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+      - name: Send notification to Telegram Channel
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
