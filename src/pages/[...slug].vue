@@ -16,9 +16,7 @@
                     协议进行许可。</v-alert>
             </v-card>
             <br>
-            <v-lazy>
-                <Comment />
-            </v-lazy>
+            <Comment />
         </v-container>
     </ContentDoc>
 </template>

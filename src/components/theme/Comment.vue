@@ -1,9 +1,12 @@
 <template>
     <v-card>
-        <v-container fluid>
-            <Waline :serverURL="serverURL" :path="path" :lang="lang" :emoji="emoji" :dark="dark" :login="login"
-                :wordLimit="wordLimit" :imageUploader="imageUploader" />
-        </v-container>
+        <v-card-title>评论区</v-card-title>
+        <v-lazy>
+            <v-container fluid>
+                <Waline :serverURL="serverURL" :path="path" :lang="lang" :emoji="emoji" :dark="dark" :login="login"
+                    :wordLimit="wordLimit" :imageUploader="imageUploader" />
+            </v-container>
+        </v-lazy>
     </v-card>
 </template>
 <script setup>
