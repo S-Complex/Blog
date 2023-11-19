@@ -3,8 +3,10 @@
     <div>
       <NuxtLoadingIndicator color="rgba(var(--v-theme-primary))" />
       <themeHeader />
-      <div style="height:64px" />
-      <themeBody />
+      <v-main>
+        <themeBanner />
+        <themeBody />
+      </v-main>
       <themeFooter />
     </div>
   </v-app>

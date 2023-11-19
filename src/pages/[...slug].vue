@@ -3,15 +3,6 @@
         <Head>
             <Meta property="og:image" v-bind:content="doc.banner ?? 'https://library.restent.win/images/bg.webp'" />
         </Head>
-        <v-card class="mx-auto" rounded="0" style="height:400px" color="#BDBDBD">
-            <v-img height="100%" cover v-bind:src="doc.banner ?? 'https://library.restent.win/images/bg.webp'">
-                <div class="theme-text-white text">
-                    <p class="text-h4 mb-2">{{ doc.title }}</p>
-                    <v-chip prepend-icon="schedule" variant="text">{{ formatDate(doc.date)
-                            }}</v-chip>
-                </div>
-            </v-img>
-        </v-card>
         <v-container style="max-width:900px">
             <v-card class="mt-n16">
                 <v-card-title class="text-body-1"></v-card-title>
