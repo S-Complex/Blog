@@ -11,7 +11,7 @@
 
 .markdown > ul,
 li {
-  margin: 0.8rem 1.3rem;
+  margin: .5rem 1.2rem;
 }
 
 .text {
@@ -24,7 +24,7 @@ li {
 }
 
 .markdown > blockquote {
-  margin: 1em;
+  margin: 1em 0em;
   padding: 0.5em 1em;
   border-left: 3.5px solid rgba(var(--v-theme-blockquoteBorder));
   background-color: rgba(var(--v-theme-blockquote));
