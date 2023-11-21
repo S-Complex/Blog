@@ -17,6 +17,14 @@
             <v-list-item prepend-icon="contacts" title="Contact" value="Contact"
                 href="https://library.restent.win/contact"></v-list-item>
         </v-list>
+
+        <v-list density="compact" nav>
+            <v-list-subheader>Quick Access</v-list-subheader>
+            <v-list-item prepend-icon="home" title="返回主页" value="Back2Home"
+                href="https://www.restent.win"></v-list-item>
+            <v-list-item prepend-icon="book" title="Restent's Notebook" value="library_books"
+                href="https://blog.restent.win"></v-list-item>
+        </v-list>
     </v-navigation-drawer>
 
     <v-app-bar scroll-behavior="hide">

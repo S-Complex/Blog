@@ -1,11 +1,9 @@
 <template>
-    <p>
-        总访问量：
-        <span id="busuanzi_value_site_pv"></span>
-        | 
-        总访客量：
-        <span id="busuanzi_value_site_uv"></span>
-    </p>
+    <div>
+        总访问量: <span id="busuanzi_value_site_pv"></span>
+        |
+        总访客量: <span id="busuanzi_value_site_uv" />
+    </div>
 </template>
 
 <script>
