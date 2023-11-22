@@ -32,8 +32,8 @@ devDependencies:
     specifier: latest
     version: 0.3.0
   '@cloudflare/workers-types':
-    specifier: ^4.20231025.0
-    version: 4.20231025.0
+    specifier: ^4.20231121.0
+    version: 4.20231121.0
   '@waline/client':
     specifier: ^2.15.8
     version: 2.15.8(typescript@5.2.2)
@@ -414,8 +414,8 @@ packages:
     dependencies:
       mime: 3.0.0
 
-  /@cloudflare/workers-types@4.20231025.0:
-    resolution: {integrity: sha512-TkcZkntUTOcvJ4vgmwpNfLTclpMbmbClZCe62B25/VTukmyv91joRa4eKzSjzCZUXTbFHNmVdOpmGaaJU2U3+A==}
+  /@cloudflare/workers-types@4.20231121.0:
+    resolution: {integrity: sha512-+kWfpCkqiepwAKXyHoE0gnkPgkLhz0/9HOBIGhHRsUvUKvhUtm3mbqqoGRWgF1qcjzrDUBbrrOq4MYHfFtc2RA==}
     dev: true
 
   /@esbuild/android-arm64@0.18.20:
