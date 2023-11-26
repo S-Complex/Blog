@@ -10,28 +10,25 @@
         </v-card>
 
         <v-list density="compact" nav>
-            <v-list-subheader>Pages</v-list-subheader>
-            <v-list-item prepend-icon="home" title="Index" value="Index" nuxt to="/"></v-list-item>
+            <v-list-item link prepend-icon="home" title="Index" value="Index" nuxt to="/"></v-list-item>
             <v-list-item prepend-icon="group" title="Friends" value="Friends"
                 href="https://library.restent.win/links"></v-list-item>
             <v-list-item prepend-icon="contacts" title="Contact" value="Contact"
                 href="https://library.restent.win/contact"></v-list-item>
-        </v-list>
-
-        <v-list density="compact" nav>
-            <v-list-subheader>Quick Access</v-list-subheader>
-            <v-list-item prepend-icon="home" title="返回主页" value="Back2Home"
-                href="https://www.restent.win"></v-list-item>
+            <v-list-item prepend-icon="home" title="Back to HomePage" value="Back2Home" href="https://www.restent.win"></v-list-item>
             <v-list-item prepend-icon="library_books" title="SliverRiver's Library" value="Go2Library"
                 href="https://library.restent.win"></v-list-item>
         </v-list>
+
     </v-navigation-drawer>
 
     <v-app-bar scroll-behavior="hide">
         <template v-slot:prepend>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"><v-icon icon="menu" /></v-app-bar-nav-icon>
         </template>
-        <v-app-bar-title v-if="path.includes('posts')" class="text-h6"><ContentDoc v-slot="{ doc }">{{ doc.title }}</ContentDoc></v-app-bar-title>
+        <v-app-bar-title v-if="path.includes('posts')" class="text-h6">
+            <ContentDoc v-slot="{ doc }">{{ doc.title }}</ContentDoc>
+        </v-app-bar-title>
         <v-app-bar-title v-else class="text-h6">Restent's Notebook</v-app-bar-title>
         <v-btn icon @click="dialog = true"><v-icon icon="rss_feed" /></v-btn>
         <v-btn icon @click="toggleTheme"><v-icon icon="contrast" /></v-btn>

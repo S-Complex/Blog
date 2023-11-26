@@ -3,10 +3,9 @@
     <div>
       <NuxtLoadingIndicator color="rgba(var(--v-theme-primary))" />
       <themeHeader />
-      <v-main>
-        <themeBanner />
-        <themeBody />
-      </v-main>
+      <div style="height:64px;" />
+      <themeBanner />
+      <themeBody />
       <themeFooter />
     </div>
   </v-app>
@@ -19,7 +18,7 @@ useHead({
     return titleChunk ? `${titleChunk} - Restent's Notebook` : 'Restent\'s Notebook';
   },
   meta: [
-    { name: 'description', content: 'Blog of Restent Ou which belongs to Sliver Complex.' }
+    { name: 'description', content: 'Restent Ou (gxres042) 的个人博客，迷失于虚无与静寂之中。' }
   ],
   link: [
     {
@@ -44,14 +43,19 @@ useHead({
       rel: "preload",
       href: "https://library.restent.win/images/bg.webp",
       as: "image"
+    },
+    {
+      rel: "preload",
+      href: "https://library.restent.win/images/defaultBanner.webp",
+      as: "image"
     }
   ]
 })
 useSeoMeta({
   title: 'Restent\'s Notebook',
   ogTitle: 'Restent\'s Notebook',
-  description: 'Blog of Restent Ou which belongs to Sliver Complex.',
-  ogDescription: 'Blog of Restent Ou which belongs to Sliver Complex.',
+  description: 'Restent Ou (gxres042) 的个人博客，迷失于虚无与静寂之中。',
+  ogDescription: 'Restent Ou (gxres042) 的个人博客，迷失于虚无与静寂之中。',
   ogImage: 'https://library.restent.win/images/icons/avatar.webp',
 })
 
