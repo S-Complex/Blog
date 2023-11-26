@@ -8,7 +8,7 @@
                 <v-row>
                     <v-col>
                         <v-card :to="slug">
-                            <v-img class="align-end text-white" width="100%" height="200"
+                            <v-img class="align-end text-white" width="100%" height="200" gradient="rgba(0,0,0,.2), rgba(0,0,0,.2)"
                                 v-bind:src="banner ?? 'https://library.restent.win/images/defaultBanner.webp'" cover>
                                 <v-card-title style="white-space:normal;">{{ title }}</v-card-title>
                             </v-img>

@@ -1,7 +1,7 @@
 <template>
     <v-card v-if="path.includes('posts')" class="mx-auto" rounded="0" style="height:400px" color="#BDBDBD">
         <ContentDoc v-slot="{ doc }">
-            <v-img height="100%" cover v-bind:src="doc.banner ?? 'https://library.restent.win/images/bg.webp'">
+            <v-img height="100%" gradient="rgba(0,0,0,.2), rgba(0,0,0,.2)" cover v-bind:src="doc.banner ?? 'https://library.restent.win/images/bg.webp'">
                 <div class="theme-text-white text">
                     <p class="text-h4 mb-2">{{ doc.title }}</p>
                     <v-chip prepend-icon="schedule" variant="text">{{ formatDate(doc.date)
