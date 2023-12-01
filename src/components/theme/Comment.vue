@@ -3,12 +3,12 @@
         <v-card-text>
             <themeHitokoto />
         </v-card-text>
+        <v-lazy>
             <v-container fluid>
-                <v-lazy>
                 <Waline :serverURL="serverURL" :path="path" :lang="lang" :emoji="emoji" :dark="dark" :login="login"
                     :wordLimit="wordLimit" :imageUploader="imageUploader" />
-                </v-lazy>
             </v-container>
+        </v-lazy>
     </v-card>
 </template>
 <script setup>

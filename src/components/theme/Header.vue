@@ -26,10 +26,12 @@
         <template v-slot:prepend>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer"><v-icon icon="menu" /></v-app-bar-nav-icon>
         </template>
-        <v-app-bar-title v-if="path.includes('posts')" class="text-h6">
-            <ContentDoc v-slot="{ doc }">{{ doc.title }}</ContentDoc>
+        <v-app-bar-title class="text-h6">
+            <span v-if="path.includes('posts')">
+                <ContentDoc v-slot="{ doc }">{{ doc.title }}</ContentDoc>
+            </span>
+            <span v-else>Restent's Notebook</span>
         </v-app-bar-title>
-        <v-app-bar-title v-else class="text-h6">Restent's Notebook</v-app-bar-title>
         <v-btn icon @click="dialog = true"><v-icon icon="rss_feed" /></v-btn>
         <v-btn icon @click="toggleTheme"><v-icon icon="contrast" /></v-btn>
     </v-app-bar>
