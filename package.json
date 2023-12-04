@@ -20,7 +20,7 @@
     "nuxt-simple-sitemap": "^3.4.1",
     "typescript": "^5.2.2",
     "vite-plugin-vuetify": "^1.0.2",
-    "vue": "^3.3.8",
+    "vue": "^3.3.10",
     "vue-router": "^4.2.5",
     "vuetify": "^3.4.2"
   },
