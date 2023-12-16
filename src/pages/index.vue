@@ -8,7 +8,9 @@
                 <v-row>
                     <v-col>
                         <v-card :to="slug">
-                            <v-img class="align-end text-white" width="100%" height="200" gradient="rgba(0,0,0,.2), rgba(0,0,0,.2)"
+                            <v-img lazy-src="https://library.restent.win/images/waitingImage.webp"
+                                class="align-end text-white" width="100%" height="200"
+                                gradient="rgba(0,0,0,.2), rgba(0,0,0,.2)"
                                 v-bind:src="banner ?? 'https://library.restent.win/images/defaultBanner.webp'" cover>
                                 <v-card-title style="white-space:normal;">{{ title }}</v-card-title>
                             </v-img>
@@ -46,18 +48,3 @@ function formatDate(date?: string): string {
     return `${year}-${month}-${day}`;
 }
 </script>
-  
-<style>
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff;
-}
-
-hr {
-    margin: 8px 0px;
-}
-</style>

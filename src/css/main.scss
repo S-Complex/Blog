@@ -19,3 +19,16 @@ a {
   text-decoration: none;
   color: rgba(var(--v-theme-primary));
 }
+
+.content {
+  flex: 1;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}

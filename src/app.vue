@@ -48,6 +48,11 @@ useHead({
       rel: "preload",
       href: "https://library.restent.win/images/defaultBanner.webp",
       as: "image"
+    },
+    {
+      rel: "preload",
+      href: "https://library.restent.win/images/waitingImage.webp",
+      as: "image"
     }
   ]
 })

@@ -5,9 +5,3 @@
         </div>
     </div>
 </template>
-
-<style scoped>
-.content {
-    flex: 1;
-}
-</style>
