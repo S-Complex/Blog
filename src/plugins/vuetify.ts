@@ -1,17 +1,17 @@
-import 'vuetify/styles'
+import "vuetify/styles";
 import { createVuetify } from "vuetify";
-import "@/assets/scss/style.scss";
-import { aliases, md } from 'vuetify/iconsets/md';
+import "@/css/main.scss";
+import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     ssr: true,
     icons: {
-      defaultSet: 'md',
+      defaultSet: "mdi",
       aliases,
       sets: {
-        md,
-      }
+        mdi,
+      },
     },
     theme: {
       themes: {
@@ -22,7 +22,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             primary: "#2196F3",
             secondary: "#03A9F4",
             blockquote: "#ECEFF1",
-            blockquoteBorder: "#039BE5"
+            blockquoteBorder: "#039BE5",
           },
         },
         dark: {
@@ -32,7 +32,7 @@ export default defineNuxtPlugin((nuxtApp) => {
             primary: "#2196F3",
             secondary: "#03A9F4",
             blockquote: "#455A64",
-            blockquoteBorder: "#0277BD"
+            blockquoteBorder: "#0277BD",
           },
         },
       },

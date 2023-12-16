@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import '../assets/scss/markdown.scss'
+import '@/css/markdown.scss';
 
 const Comment = defineAsyncComponent(() => import('@/components/theme/Comment.vue'))
 

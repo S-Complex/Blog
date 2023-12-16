@@ -1,14 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import vuetify from "vite-plugin-vuetify";
+import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 const baseUrl = "https://blog.restent.win";
 
 export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
-  },
-  routeRules: {
-    '/': { prerender: true },
-    '/posts': { isr: true }
   },
   modules: [
     "@nuxt/content",
@@ -48,7 +44,14 @@ export default defineNuxtConfig({
   },
   content: {
     highlight: {
-      theme: "material-theme-ocean",
+      theme: "material-theme",
+    },
+  },
+  vite: {
+    vue: {
+      template: {
+        transformAssetUrls,
+      },
     },
   },
   srcDir: "./src",

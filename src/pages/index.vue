@@ -14,7 +14,7 @@
                             </v-img>
                             <v-card-text>
                                 <div class="text-body-1 mb-2">{{ description }}</div>
-                                <v-chip prepend-icon="schedule" variant="text">{{ formatDate(date)
+                                <v-chip :prepend-icon="mdiClockOutline" variant="text">{{ formatDate(date)
                                 }}</v-chip>
                             </v-card-text>
                         </v-card>
@@ -26,6 +26,8 @@
 </template>
   
 <script setup lang="ts">
+import { mdiClockOutline } from '@mdi/js';
+
 const blogPosts = await queryContent('/posts')
     .sort({ date: -1 }) // show latest articles first
     .where({ _partial: false }) // exclude the Partial files

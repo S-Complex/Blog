@@ -10,13 +10,13 @@
         </v-card>
 
         <v-list density="compact" nav>
-            <v-list-item link prepend-icon="home" title="Index" value="Index" nuxt to="/"></v-list-item>
-            <v-list-item prepend-icon="group" title="Friends" value="Friends"
+            <v-list-item link :prepend-icon="mdiBookmark" title="Index" value="Index" nuxt to="/"></v-list-item>
+            <v-list-item :prepend-icon="mdiLink" title="Friends" value="Friends"
                 href="https://library.restent.win/links"></v-list-item>
-            <v-list-item prepend-icon="contacts" title="Contact" value="Contact"
+            <v-list-item :prepend-icon="mdiContacts" title="Contact" value="Contact"
                 href="https://library.restent.win/contact"></v-list-item>
-            <v-list-item prepend-icon="home" title="Back to HomePage" value="Back2Home" href="https://www.restent.win"></v-list-item>
-            <v-list-item prepend-icon="library_books" title="SliverRiver's Library" value="Go2Library"
+            <v-list-item :prepend-icon="mdiHome" title="Back to HomePage" value="Back2Home" href="https://www.restent.win"></v-list-item>
+            <v-list-item :prepend-icon="mdiLibrary" title="SliverRiver's Library" value="Go2Library"
                 href="https://library.restent.win"></v-list-item>
         </v-list>
 
@@ -24,7 +24,7 @@
 
     <v-app-bar scroll-behavior="hide">
         <template v-slot:prepend>
-            <v-app-bar-nav-icon @click.stop="drawer = !drawer"><v-icon icon="menu" /></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon @click.stop="drawer = !drawer"><v-icon :icon="mdiMenu" /></v-app-bar-nav-icon>
         </template>
         <v-app-bar-title class="text-h6">
             <span v-if="path.includes('posts')">
@@ -32,8 +32,8 @@
             </span>
             <span v-else>Restent's Notebook</span>
         </v-app-bar-title>
-        <v-btn icon @click="dialog = true"><v-icon icon="rss_feed" /></v-btn>
-        <v-btn icon @click="toggleTheme"><v-icon icon="contrast" /></v-btn>
+        <v-btn icon @click="dialog = true"><v-icon :icon="mdiRss" /></v-btn>
+        <v-btn icon @click="toggleTheme"><v-icon :icon="mdiMoonLastQuarter" /></v-btn>
     </v-app-bar>
 
     <v-dialog v-model="dialog" width="auto">
@@ -51,7 +51,8 @@
 </template>
 
 <script setup lang="ts">
-import { useTheme } from 'vuetify'
+import { useTheme } from 'vuetify';
+import { mdiMenu, mdiBookmark, mdiHome, mdiLink, mdiContacts, mdiLibrary, mdiRss, mdiMoonLastQuarter } from '@mdi/js';
 
 const theme = useTheme()
 
