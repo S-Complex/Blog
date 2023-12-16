@@ -2,7 +2,7 @@
 
 这里是 Restent's Notebook 的源代码仓库。
 
-Restent's Notebook 基于 Nuxt.js 与 Vuetify，使用 TypeScript 进行开发。
+Restent's Notebook 基于 Nuxt 与 Vuetify，使用 TypeScript 进行开发。
 
 ## 协议
 

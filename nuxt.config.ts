@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     "nuxt-simple-sitemap",
     "nuxt-feedme",
     "nuxt-simple-robots",
-    "@nuxt/image",
     async (options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) =>
         config.plugins.push(vuetify())
