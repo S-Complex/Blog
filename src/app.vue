@@ -31,16 +31,6 @@ useHead({
     },
     {
       rel: "preload",
-      href: "https://library.restent.win/images/profile.webp",
-      as: "image"
-    },
-    {
-      rel: "preload",
-      href: "https://library.restent.win/images/icons/avatar.webp",
-      as: "image"
-    },
-    {
-      rel: "preload",
       href: "https://library.restent.win/images/bg.webp",
       as: "image"
     },
