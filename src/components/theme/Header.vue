@@ -1,9 +1,9 @@
 <template>
     <v-navigation-drawer v-model="drawer" temporary>
         <v-card class="mx-auto" max-width="434" rounded="0">
-            <v-img height="100%" cover lazy-src="https://library.restent.win/images/profile.webp" src="https://library.restent.win/images/profile.webp" prefetch>
+            <v-img height="100%" cover lazy-src="https://library.restent.win/images/profile.webp" src="https://library.restent.win/images/profile.webp" prefetch alt="Restent Ou's profile image">
                 <v-avatar color="grey" size="75" rounded="1" class="mt-8 ml-3">
-                    <v-img cover lazy-src="https://library.restent.win/images/icons/avatar.webp" src="https://library.restent.win/images/icons/avatar.webp" prefetch></v-img>
+                    <v-img cover lazy-src="https://library.restent.win/images/icons/avatar.webp" src="https://library.restent.win/images/icons/avatar.webp" prefetch alt="Restent Ou's avatar"></v-img>
                 </v-avatar>
                 <v-list-item class="text-white mb-2" title="Restent Ou" subtitle="大废物"></v-list-item>
             </v-img>

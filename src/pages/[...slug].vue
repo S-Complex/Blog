@@ -11,8 +11,8 @@
                 </v-card-text>
                 <v-alert rounded="0" type="info" title="版权声明" variant="tonal">本文作者：Restent Ou<br>本文链接：<a
                         class="text-decoration-none" v-bind:href="path">{{ path
-                        }}</a><br>除含有特别声明的文章外，站内所有文章均采用 <a class="text-decoration-none"
-                        href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>
+                        }}</a><br>除含有特别声明的文章外，站内所有文章均采用 <NuxtLink
+                        href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</NuxtLink>
                     协议进行许可。</v-alert>
             </v-card>
             <br>

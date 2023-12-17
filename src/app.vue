@@ -20,6 +20,9 @@ useHead({
   meta: [
     { name: 'description', content: 'Restent Ou (gxres042) 的个人博客，迷失于虚无与静寂之中。' }
   ],
+  htmlAttrs: {
+    lang: 'zh-CN'
+  },
   link: [
     {
       rel: "shortcut icon",

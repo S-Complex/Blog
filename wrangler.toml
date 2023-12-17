@@ -1,5 +1,10 @@
 name = "blog"
-main = "src/index.js"
+main = "./.output/server/index.mjs"
 compatibility_date = "2023-10-25"
+
+rules = [
+  { type = "ESModule", globs = ["**/*.js", "**/*.mjs"]},
+]
+
 [site]
-bucket = "./.output/public"
+bucket = ".output/public"
