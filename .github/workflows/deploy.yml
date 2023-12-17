@@ -37,8 +37,6 @@ jobs:
         run: pnpm install
       - name: Build site
         run: pnpm build
-        env:
-          NITRO_PRESET: cloudflare
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@2.0.0
         with:
