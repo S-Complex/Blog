@@ -1,14 +1,14 @@
 <template>
-  <v-app>
-    <div>
-      <NuxtLoadingIndicator color="rgba(var(--v-theme-primary))" />
-      <themeHeader />
-      <div style="height:64px;" />
-      <themeBanner />
-      <themeBody />
-      <themeFooter />
-    </div>
-  </v-app>
+    <v-app>
+      <div>
+        <NuxtLoadingIndicator color="rgba(var(--v-theme-primary))" />
+        <themeHeader />
+        <div style="height:64px;" />
+        <themeBanner />
+        <themeBody />
+        <themeFooter />
+      </div>
+    </v-app>
 </template>
 
 <script setup lang="ts">

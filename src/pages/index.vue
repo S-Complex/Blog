@@ -53,20 +53,23 @@ function formatDate(date?: string): string {
 }
 
 async function load({ done }) {
-    // Perform API call
-    const res = await queryContent('/posts')
-        .sort({ date: -1 }) // show latest articles first
-        .where({ _partial: false }) // exclude the Partial files
-        .skip(blogPosts.length) // skip the already loaded posts
-        .limit(7) // limit the number of posts to load
-        .find();
+    setTimeout(async () => {
+        // Perform API call
+        const res = await queryContent('/posts')
+            .sort({ date: -1 }) // show latest articles first
+            .where({ _partial: false }) // exclude the Partial files
+            .skip(blogPosts.length) // skip the already loaded posts
+            .limit(7) // limit the number of posts to load
+            .find();
 
-    // If there are no more posts to load, stop the infinite scroll
-    if (res.length < 2) {
-        done('empty');
-    } else {
-        blogPosts.push(...res);
-        done();
-    }
+        // If there are no more posts to load, stop the infinite scroll
+        if (res.length < 2) {
+            done('empty');
+        } else {
+            blogPosts.push(...res);
+            done();
+        }
+    }, 1000)
 }
+
 </script>  

@@ -6,5 +6,7 @@ rules = [
   { type = "ESModule", globs = ["**/*.js", "**/*.mjs"]},
 ]
 
+minify = true
+
 [site]
 bucket = ".output/public"
