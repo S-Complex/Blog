@@ -6,11 +6,6 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-  nitro: {
-    prerender: {
-      routes: ['/posts/*'],
-    }
-  },
   modules: [
     "@nuxt/content",
     "nuxt-simple-sitemap",
