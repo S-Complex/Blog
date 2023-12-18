@@ -19,7 +19,7 @@
     "nuxt-simple-robots": "^3.1.10",
     "nuxt-simple-sitemap": "^4.1.17",
     "typescript": "^5.3.3",
-    "vite-plugin-vuetify": "^1.0.2",
+    "vite-plugin-vuetify": "^2.0.1",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5",
     "vuetify": "^3.4.7"
