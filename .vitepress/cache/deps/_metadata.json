@@ -1,0 +1,64 @@
+{
+  "hash": "0a445989",
+  "configHash": "4a6bb554",
+  "lockfileHash": "e72040fe",
+  "browserHash": "609d12de",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/.pnpm/vue@3.3.13/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "5341d07c",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/.pnpm/@vue+devtools-api@6.5.1/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "c277ba9e",
+      "needsInterop": false
+    },
+    "vuetify": {
+      "src": "../../../node_modules/.pnpm/vuetify@3.4.8_vue@3.3.13/node_modules/vuetify/lib/framework.mjs",
+      "file": "vuetify.js",
+      "fileHash": "0f990e2d",
+      "needsInterop": false
+    },
+    "vuetify/components": {
+      "src": "../../../node_modules/.pnpm/vuetify@3.4.8_vue@3.3.13/node_modules/vuetify/lib/components/index.mjs",
+      "file": "vuetify_components.js",
+      "fileHash": "e10c9747",
+      "needsInterop": false
+    },
+    "vuetify/iconsets/mdi-svg": {
+      "src": "../../../node_modules/.pnpm/vuetify@3.4.8_vue@3.3.13/node_modules/vuetify/lib/iconsets/mdi-svg.mjs",
+      "file": "vuetify_iconsets_mdi-svg.js",
+      "fileHash": "8fbec17d",
+      "needsInterop": false
+    },
+    "@mdi/js": {
+      "src": "../../../node_modules/.pnpm/@mdi+js@7.3.67/node_modules/@mdi/js/mdi.js",
+      "file": "@mdi_js.js",
+      "fileHash": "1e593ca1",
+      "needsInterop": false
+    },
+    "@waline/client/component": {
+      "src": "../../../node_modules/.pnpm/@waline+client@2.15.8/node_modules/@waline/client/dist/component.mjs",
+      "file": "@waline_client_component.js",
+      "fileHash": "73e0de95",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-N3QH44UJ": {
+      "file": "chunk-N3QH44UJ.js"
+    },
+    "chunk-UFCZQX2T": {
+      "file": "chunk-UFCZQX2T.js"
+    },
+    "chunk-HVMSZDGX": {
+      "file": "chunk-HVMSZDGX.js"
+    },
+    "chunk-F3FYYIAV": {
+      "file": "chunk-F3FYYIAV.js"
+    }
+  }
+}
