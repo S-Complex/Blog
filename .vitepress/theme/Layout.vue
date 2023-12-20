@@ -8,10 +8,9 @@ import Footer from './components/theme/Footer.vue';
 <template>
   <v-app>
     <Header />
-    <v-main>
+    <div class="headerSpace" />
       <Banner />
       <Body />
-    </v-main>
     <Footer />
   </v-app>
 </template>
