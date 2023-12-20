@@ -47,7 +47,6 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            一个新更改已经应用到 Restent's Notebook。
-            提交人：${{ github.actor }}
-            提交信息：${{ github.event.commits[0].message }}
+            ${{ github.actor }} 已提交新更新至 s-complex/blog
+            本 Workers 附属的提交信息：${{ github.event.commits[0].message }}
             您现在可以访问 https://blog.restent.win 以查看最新更改是否生效，若未生效请尝试刷新缓存。
