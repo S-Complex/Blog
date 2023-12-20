@@ -1,4 +1,7 @@
 {
+  "name": "sliverriver-library",
+  "license": "MIT",
+  "private": "true",
   "type": "module",
   "devDependencies": {
     "@cloudflare/kv-asset-handler": "latest",
