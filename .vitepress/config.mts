@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { createRssFile } from "./utils/rss";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -23,4 +24,8 @@ export default defineConfig({
       noExternal: ["vuetify"],
     },
   },
+  sitemap: {
+    hostname: 'https://blog.restent.win'
+  },
+  buildEnd: createRssFile,
 });

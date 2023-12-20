@@ -5,6 +5,7 @@
     "@cloudflare/workers-types": "^4.20231218.0",
     "@mdi/js": "^7.3.67",
     "@waline/client": "2.15.8",
+    "feed": "^4.2.2",
     "vitepress": "1.0.0-rc.32",
     "vue": "^3.3.13",
     "vuetify": "^3.4.8"
