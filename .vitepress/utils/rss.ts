@@ -45,7 +45,7 @@ export async function createRssFile(config: SiteConfig) {
     });
   }
 
-  writeFileSync(path.join(config.outDir, "feed.xml"), feed.atom1(), "utf-8");
+  writeFileSync(path.join(config.outDir, "feed.xml"), feed.rss2(), "utf-8");
 }
 
 export function getDate(url: string) {
