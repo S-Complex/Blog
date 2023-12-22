@@ -3,7 +3,7 @@ import { useRoute } from 'vitepress';
 import Comment from '../theme/Comment.vue';
 
 const route = useRoute();
-const currentRoute = 'https://blog.restent.win' + route.path;
+const currentRoute = 'https://blog.gxres.net' + route.path;
 </script>
 
 <template>

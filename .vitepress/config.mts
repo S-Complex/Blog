@@ -12,7 +12,7 @@ export default defineConfig({
       "link",
       {
         rel: "icon",
-        href: "https://library.restent.win/images/icons/favicon.webp",
+        href: "https://library.gxres.net/images/icons/favicon.webp",
       },
     ],
   ],
@@ -25,7 +25,7 @@ export default defineConfig({
     },
   },
   sitemap: {
-    hostname: 'https://blog.restent.win'
+    hostname: 'https://blog.gxres.net',
   },
   buildEnd: createRssFile,
 });

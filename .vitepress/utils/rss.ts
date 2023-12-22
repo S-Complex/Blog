@@ -3,7 +3,7 @@ import { writeFileSync } from "fs";
 import { Feed } from "feed";
 import { createContentLoader, type SiteConfig } from "vitepress";
 
-const hostname = "https://blog.restent.win";
+const hostname = "https://blog.gxres.net";
 
 export async function createRssFile(config: SiteConfig) {
   const feed = new Feed({
@@ -13,8 +13,8 @@ export async function createRssFile(config: SiteConfig) {
     id: hostname,
     link: hostname,
     language: "zh-CH",
-    image: "https://library.restent.win/images/icons/favicon.webp",
-    favicon: `https://library.restent.win/images/icons/favicon.webp`,
+    image: "https://library.gxres.net/images/icons/favicon.webp",
+    favicon: `https://library.gxres.net/images/icons/favicon.webp`,
     copyright: "Copyright © Restent Ou 2019 - present. Built with VitePress by SliverRiver.",
   });
 
@@ -38,14 +38,14 @@ export async function createRssFile(config: SiteConfig) {
         {
           name: "Restent Ou",
           email: "i@restent.win",
-          link: "https://www.restent.win",
+          link: "https://www.gxres.net",
         },
       ],
       date: getDate(url),
     });
   }
 
-  writeFileSync(path.join(config.outDir, "feed.xml"), feed.rss2(), "utf-8");
+  writeFileSync(path.join(config.outDir, "feed.xml"), feed.atom1(), "utf-8");
 }
 
 export function getDate(url: string) {

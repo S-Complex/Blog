@@ -1,9 +1,9 @@
 <template>
     <v-navigation-drawer v-model="drawer" temporary>
         <v-card class="mx-auto" max-width="434" rounded="0">
-            <v-img height="100%" cover src="https://library.restent.win/images/profile.webp" prefetch alt="Restent Ou's profile image">
+            <v-img height="100%" cover src="https://library.gxres.net/images/profile.webp" prefetch alt="Restent Ou's profile image">
                 <v-avatar color="grey" size="75" rounded="1" class="mt-8 ml-3">
-                    <v-img cover src="https://library.restent.win/images/icons/avatar.webp" prefetch alt="Restent Ou's avatar"></v-img>
+                    <v-img cover src="https://library.gxres.net/images/icons/avatar.webp" prefetch alt="Restent Ou's avatar"></v-img>
                 </v-avatar>
                 <v-list-item class="text-white mb-2" title="Restent Ou" subtitle="大废物"></v-list-item>
             </v-img>
@@ -12,12 +12,12 @@
         <v-list density="compact" nav>
             <v-list-item :prepend-icon="mdiBookmark" title="Index" value="Index" href="/"></v-list-item>
             <v-list-item :prepend-icon="mdiLink" title="Friends" value="Friends"
-                href="https://library.restent.win/links"></v-list-item>
+                href="https://library.gxres.net/links"></v-list-item>
             <v-list-item :prepend-icon="mdiContacts" title="Contact" value="Contact"
-                href="https://library.restent.win/contact"></v-list-item>
-            <v-list-item :prepend-icon="mdiHome" title="Back to HomePage" value="Back2Home" href="https://www.restent.win"></v-list-item>
+                href="https://library.gxres.net/contact"></v-list-item>
+            <v-list-item :prepend-icon="mdiHome" title="Back to HomePage" value="Back2Home" href="https://www.gxres.net"></v-list-item>
             <v-list-item :prepend-icon="mdiLibrary" title="SliverRiver's Library" value="Go2Library"
-                href="https://library.restent.win"></v-list-item>
+                href="https://library.gxres.net"></v-list-item>
         </v-list>
 
     </v-navigation-drawer>

@@ -9,9 +9,9 @@ import { mdiClockOutline } from '@mdi/js';
         <v-row>
             <v-col>
                 <v-card :href="post.url">
-                    <v-img lazy-src="https://library.restent.win/images/waitingImage.webp" class="align-end text-white"
+                    <v-img lazy-src="https://library.gxres.net/images/waitingImage.webp" class="align-end text-white"
                         width="100%" height="200" gradient="rgba(0,0,0,.2), rgba(0,0,0,.2)"
-                        v-bind:src="post.banner ?? 'https://library.restent.win/images/defaultBanner.webp'" cover
+                        v-bind:src="post.banner ?? 'https://library.gxres.net/images/defaultBanner.webp'" cover
                         alt="Post banner image">
                         <v-card-title style="white-space: normal">{{ post.title }}</v-card-title>
                     </v-img>
