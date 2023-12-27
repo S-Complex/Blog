@@ -6,7 +6,7 @@
   "devDependencies": {
     "@cloudflare/kv-asset-handler": "latest",
     "@cloudflare/workers-types": "^4.20231218.0",
-    "@mdi/js": "^7.3.67",
+    "@mdi/js": "^7.4.47",
     "@types/node": "^20.10.5",
     "@waline/client": "2.15.8",
     "feed": "^4.2.2",
