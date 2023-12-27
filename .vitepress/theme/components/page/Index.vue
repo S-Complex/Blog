@@ -1,11 +1,22 @@
 <script setup lang="ts">
+import { useData } from 'vitepress'
 import { data as posts } from './posts.data';
-
 import { mdiClockOutline } from '@mdi/js';
+import { computed, ref } from 'vue';
+import Pagintaion from './Pagintaion.vue';
+
+const PAGE_SIZE = 10
+const { params } = useData()
+const currentPosts = computed(() => {
+    const { page } = params.value || { page: 1 }
+    const start = (page - 1) * PAGE_SIZE
+    const end = start + PAGE_SIZE
+    return posts.slice(start, end)
+})
 </script>
 
 <template>
-    <div v-for="post of posts">
+    <div v-for="post of currentPosts">
         <v-row>
             <v-col>
                 <v-card :href="post.url">
@@ -23,4 +34,6 @@ import { mdiClockOutline } from '@mdi/js';
             </v-col>
         </v-row>
     </div>
+    <br />
+    <Pagintaion />
 </template>
