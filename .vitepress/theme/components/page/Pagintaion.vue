@@ -16,7 +16,7 @@ const currentPage = computed(() => (params.value?.page || 1) as number)
     <v-btn v-else :disabled="currentPage === 1" :href="`/page/${currentPage - 1}`">上一页</v-btn>
   </div>
   <div class="pa-2 ma-2 align-self-center">
-    <p>当前页面为第 {{ currentPage }} 页</p>
+    <p>第 {{ currentPage }} 页</p>
   </div>
   <div class="pa-2 ma-2">
     <v-btn :disabled="currentPage === totalPages" :href="`/page/${currentPage + 1}`">下一页</v-btn>
