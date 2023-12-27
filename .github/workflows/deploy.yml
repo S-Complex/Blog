@@ -41,12 +41,16 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-      - name: Send notification to Telegram Channel
-        uses: appleboy/telegram-action@master
+      - uses: colutius/Telegram-Msg@main
         with:
-          to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
+          chatid: ${{ secrets.TELEGRAM_TO }}
           message: |
-            ${{ github.actor }} 已提交新更新至 s-complex/blog
-            本 Workers 附属的提交信息：${{ github.event.commits[0].message }}
-            您现在可以访问 https://blog.restent.win 以查看最新更改是否生效，若未生效请尝试刷新缓存。
+            基于 Commit ${{ github.event.commits[0].message }} 的 Restent's Notebook 新更改已构建并部署完成。
+
+            现在可访问 https://blog.gxres.net 以查看最新更改。
+          button: true
+          button_name: 现在访问
+          button_url: https://blog.gxres.net
+          is_notify: true
+          is_preview: true
