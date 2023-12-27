@@ -7,7 +7,7 @@ on:
     paths:
       - 'posts/**'
 jobs:
-  Send notification:
+  AutoNotify:
     name: Send message
     runs-on: ubuntu-latest
     steps:
