@@ -30,7 +30,7 @@
             <span v-if="frontmatter.home">{{ site.title }}</span>
             <span v-else>{{ frontmatter.title }}</span>
         </v-app-bar-title>
-        <v-btn icon href="/feed.xml"><v-icon :icon="mdiRss" /></v-btn>
+        <v-btn icon href="/atom.xml"><v-icon :icon="mdiRss" /></v-btn>
         <v-btn icon @click="toggleTheme"><v-icon :icon="mdiMoonLastQuarter" /></v-btn>
     </v-app-bar>
 </template>
