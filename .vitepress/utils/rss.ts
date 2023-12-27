@@ -1,33 +1,32 @@
-import path from "path";
-import { writeFileSync } from "fs";
-import { Feed } from "feed";
-import { createContentLoader, type SiteConfig } from "vitepress";
+import path from 'path';
+import { writeFileSync } from 'fs';
+import { Feed } from 'feed';
+import { createContentLoader, SiteConfig } from 'vitepress';
 
-const hostname = "https://blog.gxres.net";
+const hostname = 'https://blog.gxres.net';
 
-export async function createRssFile(config: SiteConfig) {
+export async function createAtomFile(config: SiteConfig): Promise<void> {
   const feed = new Feed({
     title: "Restent's Notebook",
-    description:
-      "Blog of Restent Ou (gxres042), lost in the nothingness and silence.",
+    description: 'Blog of Restent Ou (gxres042), lost in the nothingness and silence.',
     id: hostname,
     link: hostname,
-    language: "zh-CH",
-    image: "https://library.gxres.net/images/icons/favicon.webp",
-    favicon: `https://library.gxres.net/images/icons/favicon.webp`,
-    copyright: "Copyright © Restent Ou 2019 - present. Built with VitePress by SliverRiver.",
+    language: 'zh-CH',
+    image: 'https://library.gxres.net/images/icons/favicon.webp',
+    favicon: 'https://library.gxres.net/images/icons/favicon.webp',
+    copyright: 'Copyright © Restent Ou 2019 - present. Built with VitePress by SliverRiver.',
   });
 
-  const posts = await createContentLoader("posts/*.md", {
+  const posts = await createContentLoader('posts/*.md', {
     excerpt: true,
     render: true,
   }).load();
 
-  posts.sort((a, b) => Number(+getDate(b.url) - +getDate(a.url)));
+  posts.sort((a, b) => Number(new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()));
 
-  for (const { url, excerpt, html } of posts) {
-    const lastStr = url.split("/").pop();
-    const title = lastStr?.substring(2, lastStr.length - 5) || "";
+  for (const { url, excerpt, html, frontmatter } of posts) {
+    const lastStr = url.split('/').pop();
+    const title = lastStr?.substring(2, lastStr.length - 5) || '';
     feed.addItem({
       title,
       id: `${hostname}${url}`,
@@ -36,18 +35,14 @@ export async function createRssFile(config: SiteConfig) {
       content: html,
       author: [
         {
-          name: "Restent Ou",
-          email: "i@restent.win",
-          link: "https://www.gxres.net",
+          name: 'Restent Ou',
+          email: 'i@restent.win',
+          link: 'https://www.gxres.net',
         },
       ],
-      date: getDate(url),
+      date: new Date(frontmatter.date),
     });
   }
 
-  writeFileSync(path.join(config.outDir, "feed.xml"), feed.rss2(), "utf-8");
-}
-
-export function getDate(url: string) {
-  return new Date(url.substring(4, 14));
+  writeFileSync(path.join(config.outDir, 'atom.xml'), feed.atom1(), 'utf-8');
 }

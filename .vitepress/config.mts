@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { createRssFile } from "./utils/rss";
+import { createAtomFile } from "./utils/rss";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -27,5 +27,5 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://blog.gxres.net',
   },
-  buildEnd: createRssFile,
+  buildEnd: createAtomFile,
 });
