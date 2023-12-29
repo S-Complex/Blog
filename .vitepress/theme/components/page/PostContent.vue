@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { useRoute } from 'vitepress';
+import { useRoute, useData } from 'vitepress';
 import Comment from '../theme/Comment.vue';
+
+const { frontmatter } = useData()
 
 const route = useRoute();
 const currentRoute = 'https://blog.gxres.net' + route.path;
@@ -13,7 +15,9 @@ const currentRoute = 'https://blog.gxres.net' + route.path;
     </v-card-text>
     <v-alert rounded="0" type="info" title="版权声明" variant="tonal">本文作者：Restent Ou<br />本文链接：<a
         class="text-decoration-none" v-bind:href="currentRoute">{{ currentRoute
-        }}</a><br />除含有特别声明的文章外，站内所有文章均采用
+        }}</a><br />版权协议：<span v-if="frontmatter.license === 'nd'">CC BY-NC-ND 4.0</span><span
+        v-else-if="frontmatter.license === 'disallow'">禁止转载</span><span v-else>CC BY-NC-SA
+        4.0</span><br />除含有特别声明的文章外，站内所有文章均采用
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>
       协议进行许可。
     </v-alert>

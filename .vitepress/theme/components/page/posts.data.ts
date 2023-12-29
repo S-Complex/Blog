@@ -10,6 +10,7 @@ interface Post {
   };
   description: string;
   banner: string;
+  copyright: string;
 }
 
 declare const data: Post[];
@@ -26,6 +27,7 @@ export default createContentLoader("posts/*.md", {
         date: formatDate(frontmatter.date),
         description: frontmatter.description,
         banner: frontmatter.banner,
+        copyright: frontmatter.copyright,
       }))
       .sort((a, b) => b.date.time - a.date.time);
   },
