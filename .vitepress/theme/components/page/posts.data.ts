@@ -11,6 +11,7 @@ interface Post {
   description: string;
   banner: string;
   copyright: string;
+  comment: boolean;
 }
 
 declare const data: Post[];
@@ -28,6 +29,7 @@ export default createContentLoader("posts/*.md", {
         description: frontmatter.description,
         banner: frontmatter.banner,
         copyright: frontmatter.copyright,
+        comment: frontmatter.comment,
       }))
       .sort((a, b) => b.date.time - a.date.time);
   },
