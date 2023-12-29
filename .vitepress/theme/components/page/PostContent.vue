@@ -13,13 +13,16 @@ const currentRoute = 'https://blog.gxres.net' + route.path;
     <v-card-text>
       <Content class="markdown" />
     </v-card-text>
-    <v-alert rounded="0" type="info" variant="tonal">本文作者：Restent Ou<br />本文链接：<a
-        class="text-decoration-none" v-bind:href="currentRoute">{{ currentRoute
+    <v-alert rounded="0" type="info" variant="tonal">本文作者：Restent Ou<br />本文链接：<a class="text-decoration-none"
+        v-bind:href="currentRoute">{{ currentRoute
         }}</a><br />版权协议：<span v-if="frontmatter.license === 'nd'">CC BY-NC-ND 4.0</span><span
         v-else-if="frontmatter.license === 'disallow'">禁止转载</span><span v-else>CC BY-NC-SA
         4.0</span><br />除含有特别声明的文章外，站内所有文章均采用
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>
       协议进行许可。
+    </v-alert>
+    <v-alert rounded="0" type="success" variant="tonal">如果你觉得文章真的很有作用的话，欢迎前来我的 <a
+        href="https://afdian.net/a/gxres042">afdian</a> 打赏我喔。
     </v-alert>
   </v-card>
   <br />
