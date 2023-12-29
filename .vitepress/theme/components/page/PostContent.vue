@@ -11,7 +11,10 @@ const currentRoute = 'https://blog.gxres.net' + route.path;
 <template>
   <v-card class="mt-n16">
     <v-card-text>
-      <Content class="markdown" />
+      <div class="markdown">
+        <p>{{ frontmatter.description }}</p>
+        <Content />
+      </div>
     </v-card-text>
     <v-alert rounded="0" type="info" variant="tonal">本文作者：Restent Ou<br />本文链接：<a class="text-decoration-none"
         v-bind:href="currentRoute">{{ currentRoute
@@ -21,8 +24,8 @@ const currentRoute = 'https://blog.gxres.net' + route.path;
       <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>
       协议进行许可。
     </v-alert>
-    <v-alert rounded="0" type="success" variant="tonal">如果你觉得文章真的很有作用的话，欢迎前来我的 <a
-        href="https://afdian.net/a/gxres042">afdian</a> 打赏我喔。
+    <v-alert rounded="0" type="success" variant="tonal">如果你觉得文章真的很有作用的话，欢迎在 <a
+        href="https://afdian.net/a/gxres042">爱发电</a> 上打赏我喔。
     </v-alert>
   </v-card>
   <br />
