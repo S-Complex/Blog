@@ -46,7 +46,9 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           chatid: ${{ secrets.TELEGRAM_TO }}
           message: |
-            基于 Commit ${{ github.event.commits[0].message }} 的 Restent's Notebook 新更改已构建并部署完成。
+            Restent's Notebook 的新更改已构建并部署完成。
+
+            关联的提交信息：${{ github.event.commits[0].message }}
 
             现在可访问 https://blog.gxres.net 以查看最新更改。
           button: true

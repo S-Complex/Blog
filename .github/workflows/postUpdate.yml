@@ -24,7 +24,7 @@ jobs:
 
             提交信息: ${{ github.event.commits[0].message }}
         button: true
-        button_name: 查看 Commit 详情
+        button_name: 查看提交详情
         button_url: https://github.com/${{ github.repository }}/commit/${{github.sha}}
         is_notify: true
         is_preview: true
