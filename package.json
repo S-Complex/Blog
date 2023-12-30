@@ -13,7 +13,7 @@
     "vite-plugin-vuetify": "^2.0.1",
     "vitepress": "1.0.0-rc.32",
     "vue": "^3.3.13",
-    "vuetify": "^3.4.8"
+    "vuetify": "^3.4.9"
   },
   "scripts": {
     "dev": "vitepress dev",
