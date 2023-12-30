@@ -12,8 +12,8 @@ dependencies:
     specifier: ^5.0.8
     version: 5.0.8
   sass:
-    specifier: ^1.69.5
-    version: 1.69.5
+    specifier: ^1.69.6
+    version: 1.69.6
 
 devDependencies:
   '@cloudflare/kv-asset-handler':
@@ -39,7 +39,7 @@ devDependencies:
     version: 2.0.1(vite@5.0.10)(vue@3.3.13)(vuetify@3.4.8)
   vitepress:
     specifier: 1.0.0-rc.32
-    version: 1.0.0-rc.32(@algolia/client-search@4.22.0)(@types/node@20.10.5)(sass@1.69.5)(search-insights@2.13.0)
+    version: 1.0.0-rc.32(@algolia/client-search@4.22.0)(@types/node@20.10.5)(sass@1.69.6)(search-insights@2.13.0)
   vue:
     specifier: ^3.3.13
     version: 3.3.13
@@ -642,7 +642,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 5.0.10(@types/node@20.10.5)(sass@1.69.5)
+      vite: 5.0.10(@types/node@20.10.5)(sass@1.69.6)
       vue: 3.3.13
     dev: true
 
@@ -1254,8 +1254,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /sass@1.69.5:
-    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
+  /sass@1.69.6:
+    resolution: {integrity: sha512-qbRr3k9JGHWXCvZU77SD2OTwUlC+gNT+61JOLcmLm+XqH4h/5D+p4IIsxvpkB89S9AwJOyb5+rWNpIucaFxSFQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -1392,14 +1392,14 @@ packages:
       '@vuetify/loader-shared': 2.0.1(vue@3.3.13)(vuetify@3.4.8)
       debug: 4.3.4
       upath: 2.0.1
-      vite: 5.0.10(@types/node@20.10.5)(sass@1.69.5)
+      vite: 5.0.10(@types/node@20.10.5)(sass@1.69.6)
       vue: 3.3.13
       vuetify: 3.4.8(vite-plugin-vuetify@2.0.1)(vue@3.3.13)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@5.0.10(@types/node@20.10.5)(sass@1.69.5):
+  /vite@5.0.10(@types/node@20.10.5)(sass@1.69.6):
     resolution: {integrity: sha512-2P8J7WWgmc355HUMlFrwofacvr98DAjoE52BfdbwQtyLH06XKwaL/FMnmKM2crF0iX4MpmMKoDlNCB1ok7zHCw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -1431,12 +1431,12 @@ packages:
       esbuild: 0.19.10
       postcss: 8.4.32
       rollup: 4.9.1
-      sass: 1.69.5
+      sass: 1.69.6
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress@1.0.0-rc.32(@algolia/client-search@4.22.0)(@types/node@20.10.5)(sass@1.69.5)(search-insights@2.13.0):
+  /vitepress@1.0.0-rc.32(@algolia/client-search@4.22.0)(@types/node@20.10.5)(sass@1.69.6)(search-insights@2.13.0):
     resolution: {integrity: sha512-yf00Skn5BGP+YOQvTbSrB5s9qEb/cV+i+wM5rw+mlaxcIYtK+ORvyBEYZLvKogs7OO70TppJtixb4ofeo5K7HA==}
     hasBin: true
     peerDependencies:
@@ -1461,7 +1461,7 @@ packages:
       mrmime: 1.0.1
       shikiji: 0.9.2
       shikiji-transformers: 0.9.2
-      vite: 5.0.10(@types/node@20.10.5)(sass@1.69.5)
+      vite: 5.0.10(@types/node@20.10.5)(sass@1.69.6)
       vue: 3.3.13
     transitivePeerDependencies:
       - '@algolia/client-search'
