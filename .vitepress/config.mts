@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { createAtomFile } from "./utils/rss";
+import vuetify from "vite-plugin-vuetify";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -23,9 +24,10 @@ export default defineConfig({
     ssr: {
       noExternal: ["vuetify"],
     },
+    plugins: [vuetify()],
   },
   sitemap: {
-    hostname: 'https://blog.gxres.net',
+    hostname: "https://blog.gxres.net",
   },
   buildEnd: createAtomFile,
 });

@@ -1,11 +1,9 @@
 import "vuetify/styles";
 import { createVuetify } from "vuetify";
-import * as components from 'vuetify/components';
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 
 export default createVuetify({
     ssr: true,
-    components,
     icons: {
       defaultSet: "mdi",
       aliases,
