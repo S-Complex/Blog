@@ -2,7 +2,6 @@
 title: 「捧华为踩小米」，小米做错了什么？
 date: 2023-11-06
 description: 不追求事实并跟风无证据言论以赚取流量、「不买华为不爱国」将华为与政治强行挂钩、拿着几千甚至上万的手机嘲讽买不起的人「穷屌丝」，这便是中国最触目惊心的网络现实。
-banner: https://library.restent.win/images/postBanners/boost-huawei-but-tread-xiaomi-what-xiaomi-do-wrong.webp
 license: disallow
 ---
 

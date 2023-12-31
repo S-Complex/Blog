@@ -2,6 +2,7 @@
 title: 我的 2023 年度总结
 date: 2023-12-29
 description: 2023 年就这么过去了，浅浅写了一篇比较正式的年度总结。
+banner: https://library.gxres.net/images/postBanners/2023-annual-summary.webp
 ---
 
 ## 心态走向平缓
