@@ -1,6 +1,0 @@
-name = "blog"
-main = "./index.js"
-compatibility_date = "2023-10-25"
-
-[site]
-bucket = ".vitepress/dist"
