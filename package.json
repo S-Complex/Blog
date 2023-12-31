@@ -4,14 +4,14 @@
   "private": "true",
   "type": "module",
   "devDependencies": {
-    "@mdi/js": "^7.3.67",
-    "@types/node": "^20.10.5",
+    "@mdi/js": "^7.4.47",
+    "@types/node": "^20.10.6",
     "@waline/client": "2.15.8",
     "feed": "^4.2.2",
     "vite-plugin-vuetify": "^2.0.1",
     "vitepress": "1.0.0-rc.32",
-    "vue": "^3.3.13",
-    "vuetify": "^3.4.8"
+    "vue": "^3.4.3",
+    "vuetify": "^3.4.9"
   },
   "scripts": {
     "dev": "vitepress dev",
@@ -21,6 +21,6 @@
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.18",
     "@fontsource/roboto": "^5.0.8",
-    "sass": "^1.69.5"
+    "sass": "^1.69.6"
   }
 }
