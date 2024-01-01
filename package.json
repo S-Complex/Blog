@@ -4,7 +4,6 @@
   "private": "true",
   "type": "module",
   "devDependencies": {
-    "@mdi/js": "^7.4.47",
     "@types/node": "^20.10.6",
     "@waline/client": "2.15.8",
     "feed": "^4.2.2",
@@ -21,6 +20,7 @@
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.18",
     "@fontsource/roboto": "^5.0.8",
+    "material-icons": "^1.13.12",
     "sass": "^1.69.6"
   }
 }

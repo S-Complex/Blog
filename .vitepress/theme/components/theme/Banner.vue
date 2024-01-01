@@ -7,10 +7,10 @@
     </v-card>
     <v-card v-else class="mx-auto" rounded="0" width="100%" height="400" color="#BDBDBD">
         <v-img height="100%" cover v-bind:lazy-src="frontmatter.banner ?? 'https://library.gxres.net/images/bg.webp'"
-            v-bind:src="frontmatter.banner ?? 'https://library.gxres.net/images/bg.webp'" alt="Site banner image">
+            v-bind:src="frontmatter.banner ?? 'https://library.gxres.net/images/bg.webp'" gradient="rgba(0,0,0,.2), rgba(0,0,0,.2)" alt="Site banner image">
             <div class="text-h4 theme-text-white text">
                 {{ frontmatter.title }}<br>
-                <v-chip :prepend-icon="mdiClockOutline" variant="text">{{ formatDate(frontmatter.date)
+                <v-chip prepend-icon="access_time_filled" variant="text">{{ formatDate(frontmatter.date)
                 }}</v-chip>
             </div>
         </v-img>
@@ -19,7 +19,6 @@
 
 <script setup lang="ts">
 import { useData } from 'vitepress';
-import { mdiClockOutline } from '@mdi/js';
 
 const { frontmatter } = useData()
 

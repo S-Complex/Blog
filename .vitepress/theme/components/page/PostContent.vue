@@ -52,7 +52,8 @@ li {
 .markdown blockquote {
   margin: 1em 0em;
   padding: 0.5em 1em;
-  border-left: 3.5px solid rgba(var(--v-theme-blockquoteBorder));
+  border-radius: 4px;
+  border-left: 5px solid rgba(var(--v-theme-blockquoteBorder));
   background-color: rgba(var(--v-theme-blockquote));
 }
 

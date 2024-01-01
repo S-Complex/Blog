@@ -1,14 +1,14 @@
 import "vuetify/styles";
 import { createVuetify } from "vuetify";
-import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
+import { aliases, md } from "vuetify/iconsets/md";
 
 export default createVuetify({
     ssr: true,
     icons: {
-      defaultSet: "mdi",
+      defaultSet: "md",
       aliases,
       sets: {
-        mdi,
+        md,
       },
     },
     theme: {
@@ -21,6 +21,7 @@ export default createVuetify({
             secondary: "#0288D1",
             blockquote: "#ECEFF1",
             blockquoteBorder: "#039BE5",
+            customblockBG: "#ECEFF1",
           },
         },
         dark: {
@@ -31,6 +32,7 @@ export default createVuetify({
             secondary: "#0288D1",
             blockquote: "#455A64",
             blockquoteBorder: "#039BE5",
+            customblockBG: "#455A64",
           },
         },
       },

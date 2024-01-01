@@ -5,13 +5,19 @@ description: 不追求事实并跟风无证据言论以赚取流量、「不买�
 license: disallow
 ---
 
-> 本文章基于老宅评测的此条视频撰写：[买办？嘲讽华为？真实的小米究竟是怎么样的](https://www.bilibili.com/video/BV1Sz4y1N7Dv/?share_source=copy_web&vd_source=b4e6fd44abbdedbbdb6f7996c394f327)
->
-> 本文章目前我仅发布在 Restent's Notebook。
->
-> 为了能够更方便查看对应事实依据，每一条的相关资料我都会放在主题内容下方。
->
-> 观前提醒：本文章没有针对任何人，请自行斟酌。
+::: tip
+
+本文章基于老宅评测的此条视频撰写：[买办？嘲讽华为？真实的小米究竟是怎么样的](https://www.bilibili.com/video/BV1Sz4y1N7Dv/?share_source=copy_web&vd_source=b4e6fd44abbdedbbdb6f7996c394f327)
+
+为了能够更方便查看对应事实依据，每一条的相关资料我都会放在主题内容下方。
+
+:::
+
+::: danger 特别提醒
+
+本文章没有针对任何人，如果只是想无脑喷希望您自行找地方开战。
+
+:::
 
 一两天前，我在 Telegram 频道和 Mastodon 同时转发了老宅评测的一条 [B 站视频](https://b23.tv/xLpcCJd)。内容大致是：一位老先生通过搜集网友黑小米的评论、总结了一系列踩小米的逆天言论合集，后面就有了这一条视频。这条视频再让我感慨「终于有人说句公道话」的同时，也让我发起了对这种现状的思考。
 

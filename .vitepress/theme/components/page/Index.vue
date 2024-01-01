@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
 import { data as posts } from './posts.data';
-import { mdiClockOutline } from '@mdi/js';
-import { computed, ref } from 'vue';
+import { computed } from 'vue';
 import Pagintaion from './Pagintaion.vue';
 
 const PAGE_SIZE = 10
@@ -28,7 +27,7 @@ const currentPosts = computed(() => {
                     </v-img>
                     <v-card-text>
                         <div class="text-body-1 mb-2">{{ post.description }}</div>
-                        <v-chip :prepend-icon="mdiClockOutline" variant="text">{{ post.date.string }}</v-chip>
+                        <v-chip prepend-icon="access_time_filled" variant="text">{{ post.date.string }}</v-chip>
                     </v-card-text>
                 </v-card>
             </v-col>
