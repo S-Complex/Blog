@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/(.*).(ttf|otf|woff2)",
+      "source": "/assets/(.*).(ttf|otf|woff2)",
       "headers": [
         {
           "key": "Cache-Control",
