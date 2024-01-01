@@ -2,3 +2,4 @@
 User-agent: *
 Disallow: 
 Crawl-delay: 60
+Sitemap: https://blog.gxres.net/sitemap.xml

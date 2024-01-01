@@ -18,7 +18,7 @@ export default defineConfig({
     ],
   ],
   markdown: {
-    theme: "material-theme-palenight",
+    theme: "material-theme-ocean"
   },
   vite: {
     ssr: {

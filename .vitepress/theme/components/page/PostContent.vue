@@ -70,14 +70,14 @@ li {
   margin: 1em 1em;
   border-radius: 8px;
   padding: 1em;
-  background-color: #363636;
+  background-color: #546E7A;
   overflow: auto;
 }
 
 .markdown code {
   font-family: "Jetbrains Mono";
-  background-color: #363636;
-  color: #1e90ff;
+  background-color: #546E7A;
+  color: #CFD8DC;
   border-radius: 4px;
 }
 </style>
