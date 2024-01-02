@@ -65,10 +65,16 @@ li {
   margin: 20px 0px;
 }
 
+.lang {
+  background-color: rgba(var(--v-theme-primary));
+  border-radius: 4px 4px 0px 0px;
+  padding: 1px;
+}
+
 .markdown pre {
-  margin: 1em 1em;
-  border-radius: 8px;
+  border-radius: 0px 8px 8px 8px;
   padding: 1em;
+  margin-bottom: 0.7rem;
   background-color: #546E7A;
   overflow: auto;
 }
