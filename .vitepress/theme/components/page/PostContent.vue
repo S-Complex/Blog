@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useRoute, useData } from 'vitepress';
-import Comment from '../theme/Comment.vue';
 
 const { frontmatter } = useData()
 
@@ -29,7 +28,7 @@ const currentRoute = 'https://blog.gxres.net' + route.path;
     </v-alert>
   </v-card>
   <br />
-  <Comment />
+  <Artalk />
 </template>
 
 <style type="scss">

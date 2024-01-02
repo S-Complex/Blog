@@ -20,6 +20,7 @@
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.18",
     "@fontsource/roboto": "^5.0.8",
+    "artalk": "^2.7.3",
     "material-icons": "^1.13.12",
     "sass": "^1.69.6"
   }
