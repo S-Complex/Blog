@@ -65,15 +65,20 @@ li {
   margin: 20px 0px;
 }
 
-.lang {
-  background-color: rgba(var(--v-theme-primary));
-  border-radius: 4px 4px 0px 0px;
-  padding: 1px;
+span.lang {
+    margin-top: 0.3rem;
+    position: absolute;
+    right: 0.5em;
+    font-size: .8em;
+    color: #999;
+    font-family: "Jetbrains Mono";
 }
 
 .markdown pre {
-  border-radius: 0px 8px 8px 8px;
+  display: block;
+  border-radius: 8px;
   padding: 1em;
+  margin-top: -1.0rem;
   margin-bottom: 0.7rem;
   background-color: #546E7A;
   overflow: auto;

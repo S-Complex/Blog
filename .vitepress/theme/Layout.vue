@@ -26,7 +26,7 @@ onMounted(() => {
       <Header />
       <div class="headerSpace" />
       <Banner />
-      <Body />
+      <Body class="main" />
       <Footer />
     </v-theme-provider>
   </v-app>
