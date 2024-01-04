@@ -5,6 +5,7 @@ import vuetify from "vite-plugin-vuetify";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Restent's Notebook",
+  titleTemplate: ":title - Restent's Notebook",
   description:
     "Blog of Restent Ou (gxres042), lost in the nothingness and silence.",
   lang: "zh-CN",

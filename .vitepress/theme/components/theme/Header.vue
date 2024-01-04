@@ -28,6 +28,7 @@
         </template>
         <v-app-bar-title class="text-h6">
             <span v-if="frontmatter.home">{{ site.title }}</span>
+            <span v-else-if="page.isNotFound">404</span>
             <span v-else>{{ frontmatter.title }}</span>
         </v-app-bar-title>
         <v-btn icon href="/atom.xml"><v-icon icon="rss_feed" /></v-btn>
@@ -40,7 +41,7 @@ import { useTheme } from 'vuetify';
 import { useData } from 'vitepress';
 
 const theme = useTheme()
-const { site, frontmatter } = useData()
+const { site, frontmatter, page } = useData()
 
 function toggleTheme() {
     theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
