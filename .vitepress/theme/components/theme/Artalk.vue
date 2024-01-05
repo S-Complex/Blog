@@ -57,7 +57,7 @@ function getConfByPage() {
     return {
         pageKey: 'https://blog.gxres.net' + router.route.path,
         pageTitle: page.value.title,
-        server: 'https://artalk.restent.win',
+        server: 'https://artalk.slirv.vip',
         site: "Restent's Notebook",
     }
 }
