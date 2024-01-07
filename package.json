@@ -5,11 +5,10 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^20.10.6",
-    "@waline/client": "2.15.8",
     "feed": "^4.2.2",
     "vite-plugin-vuetify": "^2.0.1",
-    "vitepress": "1.0.0-rc.32",
-    "vue": "^3.4.3",
+    "vitepress": "^1.0.0-rc.35",
+    "vue": "^3.4.5",
     "vuetify": "^3.4.9"
   },
   "scripts": {
@@ -22,6 +21,6 @@
     "@fontsource/roboto": "^5.0.8",
     "artalk": "^2.7.3",
     "material-icons": "^1.13.12",
-    "sass": "^1.69.6"
+    "sass": "^1.69.7"
   }
 }
