@@ -7,7 +7,7 @@
     "@types/node": "^20.10.6",
     "feed": "^4.2.2",
     "vite-plugin-vuetify": "^2.0.1",
-    "vitepress": "^1.0.0-rc.35",
+    "vitepress": "1.0.0-rc.35",
     "vue": "^3.4.5",
     "vuetify": "^3.4.9"
   },
