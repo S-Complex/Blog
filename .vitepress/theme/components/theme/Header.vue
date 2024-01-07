@@ -1,9 +1,11 @@
 <template>
     <v-navigation-drawer v-model="drawer" temporary>
         <v-card class="mx-auto" max-width="434" rounded="0">
-            <v-img height="100%" cover src="https://library.gxres.net/images/profile.webp" prefetch alt="Restent Ou's profile image">
+            <v-img height="100%" cover src="https://library.gxres.net/images/profile.webp" prefetch
+                alt="Restent Ou's profile image">
                 <v-avatar color="grey" size="75" rounded="1" class="mt-8 ml-3">
-                    <v-img cover src="https://library.gxres.net/images/icons/avatar.webp" prefetch alt="Restent Ou's avatar"></v-img>
+                    <v-img cover src="https://library.gxres.net/images/icons/avatar.webp" prefetch
+                        alt="Restent Ou's avatar"></v-img>
                 </v-avatar>
                 <v-list-item class="text-white mb-2" title="Restent Ou" subtitle="大废物"></v-list-item>
             </v-img>
@@ -15,9 +17,12 @@
                 href="https://library.gxres.net/links"></v-list-item>
             <v-list-item prepend-icon="contacts" title="Contact" value="Contact"
                 href="https://library.gxres.net/contact"></v-list-item>
-            <v-list-item prepend-icon="home" title="Back to HomePage" value="Back2Home" href="https://www.gxres.net"></v-list-item>
+            <v-list-item prepend-icon="home" title="Back to HomePage" value="Back2Home"
+                href="https://www.gxres.net"></v-list-item>
             <v-list-item prepend-icon="library_books" title="SliverRiver's Library" value="Go2Library"
                 href="https://library.gxres.net"></v-list-item>
+            <v-list-item prepend-icon="analytics" title="Site Status" value="SiteStatus"
+                href="https://status.slirv.vip"></v-list-item>
         </v-list>
 
     </v-navigation-drawer>
@@ -53,7 +58,6 @@ export default {
     data() {
         return {
             drawer: false,
-            dialog: false,
         }
     },
 }

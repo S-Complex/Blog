@@ -45,7 +45,7 @@ const currentRoute = 'https://blog.gxres.net' + route.path;
 
 .markdown ul,
 li {
-  margin: 0.5rem 1.2rem;
+  margin: .5rem .67rem;
 }
 
 .markdown blockquote {
